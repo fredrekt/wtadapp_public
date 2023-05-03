@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ConfigProvider } from 'antd';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ar_EG from 'antd/locale/ar_EG';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -17,6 +18,7 @@ root.render(
 					borderRadiusLG: 40
 				}
 			}}
+			locale={ar_EG}
 		>
 			<Router>
 				<App />

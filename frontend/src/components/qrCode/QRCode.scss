@@ -1,0 +1,17 @@
+.qrCodeComponent {
+	background-color: #d1d4f8;
+    .qrCodeComponentHeader {
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .qrHeaderTxt {
+            color: #421aff;
+            font-weight: 700;
+        }
+        .qrCta {
+            width: 60%;
+        }
+    }
+}
