@@ -5,26 +5,24 @@ import reportWebVitals from './reportWebVitals';
 import { ConfigProvider } from 'antd';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
-  <React.StrictMode>
-    <ConfigProvider
-      theme={{
-        token: {
-          colorPrimary: '#421AFF',
-          borderRadius: 20,
-          borderRadiusLG: 40
-        },
-      }}
-    >
+	<React.StrictMode>
+		<ConfigProvider
+			theme={{
+				token: {
+					colorPrimary: '#421AFF',
+					borderRadius: 20,
+					borderRadiusLG: 40
+				}
+			}}
+		>
 			<Router>
-        <App />
-      </Router>
-    </ConfigProvider>
-  </React.StrictMode>
+				<App />
+			</Router>
+		</ConfigProvider>
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

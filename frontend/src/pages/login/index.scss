@@ -1,42 +1,41 @@
 .loginPage {
-    .loginContainer {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        .loginCardContainer {
-            .ant-card-body {
-                padding-top: 150px;
-            }
-            .loginEmail {
-
-            }
-            .loginPassword {
-                margin: 12px 0;
-            }
-            .loginCta {
-                width: 100%;
-                margin-top: 25px;
-                button {
-                    width: 50%;
-                    margin: auto;
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-            .forgotPassword {
-                gap: 8px;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                width: 100%;
-                margin: 12px 0px 0;
-                a {
-                    color: #A39D9D;
-                    font-weight: 600;
-                }
-            }
-        }  
-    }
+	.loginContainer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		.loginCardContainer {
+			.ant-card-body {
+				padding-top: 150px;
+			}
+			.loginEmail {
+			}
+			.loginPassword {
+				margin: 12px 0;
+			}
+			.loginCta {
+				width: 100%;
+				margin-top: 25px;
+				button {
+					width: 50%;
+					margin: auto;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.forgotPassword {
+				gap: 8px;
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				width: 100%;
+				margin: 12px 0px 0;
+				a {
+					color: #a39d9d;
+					font-weight: 600;
+				}
+			}
+		}
+	}
 }

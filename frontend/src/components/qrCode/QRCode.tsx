@@ -1,16 +1,10 @@
-import React from 'react'
-import './QRCode.scss'
+import React from 'react';
+import './QRCode.scss';
 
-interface QRCodeProps {
-
-}
+interface QRCodeProps {}
 
 const QRCode: React.FC<QRCodeProps> = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+	return <div></div>;
+};
 
-export default QRCode
+export default QRCode;
