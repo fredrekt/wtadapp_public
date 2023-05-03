@@ -11,6 +11,7 @@ import CardFormatPage from './pages/cardFormat';
 import PageFormatPage from './pages/pageFormat';
 import SettingsPage from './pages/settings';
 import HelpPage from './pages/help';
+import MissingPage from './pages/missing';
 
 const App: React.FC = () => {
 	return (
@@ -75,6 +76,7 @@ const App: React.FC = () => {
 						</ProtectedRoute>
 					}
 				/>
+				<Route path="*" element={<MissingPage />} />
 			</Routes>
 		</>
 	);
