@@ -2,9 +2,9 @@ import React from 'react';
 import './index.scss';
 import AdminLayout from '../../layouts/admin';
 
-const DashboardPage: React.FC = () => {
+const SettingsPage: React.FC = () => {
 	return (
-		<AdminLayout className="dashboardPage">
+		<AdminLayout className="settingsPage">
 			<div>
 				1
 			</div>
@@ -12,4 +12,4 @@ const DashboardPage: React.FC = () => {
 	);
 };
 
-export default DashboardPage;
+export default SettingsPage;
