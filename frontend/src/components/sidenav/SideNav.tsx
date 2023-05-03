@@ -2,7 +2,7 @@ import React from 'react';
 import './SideNav.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, message } from 'antd';
-import type { MenuProps, MenuTheme } from 'antd/es/menu';
+import type { MenuProps } from 'antd/es/menu';
 import {
 	CreditCardOutlined,
 	UsergroupAddOutlined,
