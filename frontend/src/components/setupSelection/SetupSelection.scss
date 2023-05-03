@@ -1,0 +1,33 @@
+.setupSelectionCard {
+    cursor: pointer;
+    transition: ease-in-out;
+    text-align: center;
+    .setupSelectionLabel {
+        font-weight: 700;
+        color: #421AFF;
+        font-size: 15px;
+        &.header {
+            font-size: 20px;
+            font-weight: 800;
+            width: 75%;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+    }
+    .ant-card {
+        box-shadow: unset;
+    }
+    &.selected {
+        background: #421AFF;
+        .setupSelectionLabel {
+            color: #ffffff;
+        }
+    }
+    &:hover {
+        color: #ffffff;
+        background: #421AFF;
+        .setupSelectionLabel {
+            color: #ffffff;
+        }
+    }
+}
