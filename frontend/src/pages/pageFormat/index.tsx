@@ -5,9 +5,7 @@ import AdminLayout from '../../layouts/admin';
 const PageFormatPage: React.FC = () => {
 	return (
 		<AdminLayout className="pageFormatPage">
-			<div>
-				1
-			</div>
+			<div>1</div>
 		</AdminLayout>
 	);
 };

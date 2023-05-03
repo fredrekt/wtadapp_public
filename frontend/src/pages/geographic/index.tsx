@@ -5,9 +5,7 @@ import AdminLayout from '../../layouts/admin';
 const GeographicPage: React.FC = () => {
 	return (
 		<AdminLayout className="geographicPage">
-			<div>
-				1
-			</div>
+			<div>1</div>
 		</AdminLayout>
 	);
 };

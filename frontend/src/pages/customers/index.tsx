@@ -5,9 +5,7 @@ import AdminLayout from '../../layouts/admin';
 const CustomersPage: React.FC = () => {
 	return (
 		<AdminLayout className="customersPage">
-			<div>
-				1
-			</div>
+			<div>1</div>
 		</AdminLayout>
 	);
 };
