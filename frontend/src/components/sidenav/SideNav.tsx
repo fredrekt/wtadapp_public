@@ -9,21 +9,21 @@ import {
 	BarChartOutlined,
 	HomeOutlined,
 	LayoutOutlined,
-  SettingOutlined,
-  QuestionCircleOutlined,
-  LogoutOutlined
+	SettingOutlined,
+	QuestionCircleOutlined,
+	LogoutOutlined
 } from '@ant-design/icons';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
 const SideNav: React.FC = () => {
-  const navigate = useNavigate();
+	const navigate = useNavigate();
 
-  const logout = () => {
-    navigate(`/login`);
-    message.success('Successfully logged out.')
-    localStorage.removeItem('loggedIn');
-  }
+	const logout = () => {
+		navigate(`/login`);
+		message.success('Successfully logged out.');
+		localStorage.removeItem('loggedIn');
+	};
 
 	const topItems: MenuItem[] = [
 		getItem(<Link to="/">Home</Link>, '1', <HomeOutlined />),
@@ -33,10 +33,10 @@ const SideNav: React.FC = () => {
 		getItem(<Link to="/geographic">Geographic</Link>, 'geographic', <BarChartOutlined />)
 	];
 
-  const bottomItems: MenuItem[] = [
+	const bottomItems: MenuItem[] = [
 		getItem(<Link to="/settings">Settings</Link>, '1', <SettingOutlined />),
 		getItem(<Link to="/help">Help</Link>, '2', <QuestionCircleOutlined />),
-		getItem('Sign out', 'logout', <LogoutOutlined />),
+		getItem('Sign out', 'logout', <LogoutOutlined />)
 	];
 
 	function getItem(
@@ -53,16 +53,21 @@ const SideNav: React.FC = () => {
 		} as MenuItem;
 	}
 
-  const bottomOnClick = (key: string) => {
-    if (key === 'logout') {
-      logout();
-    }
-  }
+	const bottomOnClick = (key: string) => {
+		if (key === 'logout') {
+			logout();
+		}
+	};
 
 	return (
 		<div className="sideNavMainContainer">
 			<Menu className="sideNavAdmin" items={topItems} theme="dark" />
-			<Menu onClick={({key}) => bottomOnClick(key)} className="sideNavAdminBottom" items={bottomItems} theme="dark" />
+			<Menu
+				onClick={({ key }) => bottomOnClick(key)}
+				className="sideNavAdminBottom"
+				items={bottomItems}
+				theme="dark"
+			/>
 		</div>
 	);
 };
