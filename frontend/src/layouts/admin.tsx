@@ -13,7 +13,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children, className }) => {
   return (
     <Layout className={`wtdAdminLayout ${className}`}>
         <Sider>
-            <SideNav/>
+          <SideNav/>
         </Sider>
         <Content>
             {children}
