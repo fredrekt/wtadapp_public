@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './QRCode.scss';
 import { QRCode, Typography, theme, Button, message } from 'antd';
+import { WarningFilled } from '@ant-design/icons';
 
 interface QRCodeProps {}
 
@@ -31,6 +32,25 @@ const QRCodeComponent: React.FC<QRCodeProps> = () => {
 					}}
 				/>
 				<Button className='qrCta' onClick={copyLink} type="primary">Copy link</Button>
+			</div>
+			<div className="qrContent">
+				<Typography.Paragraph>
+					<WarningFilled />
+					Platform updates are written here and everyone can view them.
+				</Typography.Paragraph>
+				<Typography.Paragraph>
+					<WarningFilled />
+					Platform updates are written here and everyone can view them.
+				</Typography.Paragraph>
+				<Typography.Paragraph>
+					<WarningFilled />
+					Platform updates are written here and everyone can view them.
+				</Typography.Paragraph>
+			</div>
+			<div className="qrFooter">
+				<Typography.Paragraph>
+					All rights reserved ©
+				</Typography.Paragraph>
 			</div>
 		</div>
 	);
