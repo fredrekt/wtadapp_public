@@ -1,0 +1,47 @@
+.registerPage {
+    .registerContainer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        .registerCardContainer {
+            .ant-card-body {
+                padding-top: 150px;
+            }
+            .registerBusinessName {
+                margin: 6px 0;
+            }
+            .registerEmail {
+                margin: 6px 0;
+            }
+            .registerPassword {
+                margin: 6px 0;
+            }
+            .registerPhone {
+                margin: 6px 0;
+            }
+            .registerCta {
+                width: 100%;
+                margin-top: 50px;
+                button {
+                    width: 50%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .registerTxtContainer {
+                gap: 8px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin: 12px 0px 0;
+                .registerTxt {
+                    font-size: 10px;
+                }
+            }
+        }  
+    }
+}
