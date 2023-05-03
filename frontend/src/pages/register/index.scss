@@ -11,15 +11,33 @@
 			}
 			.registerBusinessName {
 				margin: 6px 0;
+				text-align: center;
+				&::placeholder {
+					font-weight: 700;
+				}
 			}
 			.registerEmail {
 				margin: 6px 0;
+				text-align: center;
+				&::placeholder {
+					font-weight: 700;
+				}
 			}
 			.registerPassword {
 				margin: 6px 0;
+				.ant-input {
+					text-align: center;
+					&::placeholder {
+						font-weight: 700;
+					}
+				}
 			}
 			.registerPhone {
 				margin: 6px 0;
+				text-align: center;
+				&::placeholder {
+					font-weight: 700;
+				}
 			}
 			.registerCta {
 				width: 100%;

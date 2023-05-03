@@ -10,9 +10,19 @@
 				padding-top: 150px;
 			}
 			.loginEmail {
+				text-align: center;
+				&::placeholder {
+					font-weight: 700;
+				}
 			}
 			.loginPassword {
 				margin: 12px 0;
+				.ant-input {
+					text-align: center;
+					&::placeholder {
+						font-weight: 700;
+					}
+				}
 			}
 			.loginCta {
 				width: 100%;
