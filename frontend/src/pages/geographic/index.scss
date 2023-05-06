@@ -1,0 +1,43 @@
+.geographicPage {
+    .geographicContent {
+        padding: 20px;
+        .formTitle {
+            color: #421aff;
+        }
+        .geographicFormContainer {
+            margin-top: 20px;
+            .customLabel {
+                h5 {
+                    color: #421aff;
+                    margin-bottom: 0;
+                }
+            }
+            .customFormRowInputContainer {
+                background: #F2F1F8;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .formCta {
+                .ant-row {
+                    margin-top: 100px;
+                    justify-content: center;
+                }
+                button {
+                    width: 100%;
+                }
+            }
+        }
+        .mapContent {
+            .ant-card {
+                background: #421aff;
+                margin-top: 0;
+                .mapTitle {
+                    color: #ffffff;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
