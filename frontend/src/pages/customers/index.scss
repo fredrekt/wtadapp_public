@@ -1,0 +1,35 @@
+.customersPage {
+    .customerPageContent {
+        padding: 20px;
+        .pageHeaderCta {
+            button {
+                width: 100%;
+            }
+        }
+        .customerCardFilter {
+            margin: 25px 0;
+            .pageHeaderFilters {
+                .filterTitle {
+                    color: #421aff;
+                }
+                .filterSelect {
+                    width: 100%;
+                    .ant-select-selector {
+                        background: linear-gradient(90deg, transparent 0, transparent 80%, #421aff 0, #421aff 100%);
+                    }
+                    .ant-select-arrow {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .customerCardTable {
+            .tableActionCtas {
+                svg {
+                    color: #421aff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
