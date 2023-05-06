@@ -6,6 +6,10 @@
         }
         .helpFormContainer {
             margin-top: 20px;
+            textarea {
+                padding: 20px;
+                font-weight: 700;
+            }
             .formCta {
                 .ant-row {
                     margin-top: 100px;
