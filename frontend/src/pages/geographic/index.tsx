@@ -12,7 +12,7 @@ const GeographicPage: React.FC = () => {
 			<div className='geographicContent'>
 				<Row gutter={[16 ,16]}>
 					<Col span={14}>
-						<Card>
+						<Card className='fullHeightCard'>
 							<Typography.Title className='formTitle' level={4}>Geographic</Typography.Title>
 							<Form
 								className='geographicFormContainer'

@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 import AdminLayout from '../../layouts/admin';
-import { Card, Col, Row, Typography, Form, Input, Button, QRCode } from 'antd';
+import { Card, Col, Row, Typography, Form, Button, QRCode } from 'antd';
 import greyBg from '../../assets/images/grey_bg.jpg';
 
 const CardFormatPage: React.FC = () => {
@@ -92,7 +92,7 @@ const CardFormatPage: React.FC = () => {
 						</Card>
 					</Col>
 					<Col className='cardContent' span={10}>
-						<Card>
+						<Card className='fullHeightCard'>
 							<div className="cardHeader">
 								<Typography.Title className='cardTitle' level={4}>LOGO</Typography.Title>
 								<div className="cardHeaderPoints">

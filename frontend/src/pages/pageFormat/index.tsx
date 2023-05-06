@@ -110,7 +110,7 @@ const PageFormatPage: React.FC = () => {
 						</Card>
 					</Col>
 					<Col className='logoContent' span={10}>
-						<Card>
+						<Card className='fullHeightCard'>
 							<Typography.Title className='mapTitle' level={4}>LOGO</Typography.Title>
 							<div className="imgContainer">
 								<img className='pageFormatImg' src={greyBg} alt="placeholder under logo" />
