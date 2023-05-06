@@ -1,5 +1,30 @@
 .settingsPage {
     .settingsContent {
         padding: 20px;
+        .formTitle {
+            color: #421aff;
+        }
+        .settingsFormContainer {
+            margin-top: 20px;
+            .formButton {
+                text-align: right;
+                button {
+                    width: 40%;
+                }
+            }
+            label {
+                font-weight: 700;
+                color: #421aff;
+            }
+            .formCta {
+                .ant-row {
+                    margin-top: 100px;
+                    justify-content: center;
+                }
+                button {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
