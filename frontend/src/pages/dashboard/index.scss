@@ -1,4 +1,5 @@
 .dashboardPage {
+	height: auto!important;
 	.dashboardRow {
 		display: flex;
 		height: 100%;
@@ -6,6 +7,22 @@
 		.dashboardContent {
 			width: 80%;
             padding: 20px;
+			.dashboardLineGraphChart {
+				margin: 25px 0;
+			}
+			.customerCardTable {
+				margin: 25px 0;
+				.tableTitle {
+					margin-top: 0;
+					margin-bottom: 20px;
+				}
+				.tableActionCtas {
+					svg {
+						color: #421aff;
+						cursor: pointer;
+					}
+				}
+			}
 		}
 		.qrCodeComponent {
 			width: 20%;
