@@ -1,0 +1,20 @@
+.helpPage {
+    .helpPageContent {
+        padding: 20px;
+        .formTitle {
+            color: #421aff;
+        }
+        .helpFormContainer {
+            margin-top: 20px;
+            .formCta {
+                .ant-row {
+                    margin-top: 100px;
+                    justify-content: center;
+                }
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
