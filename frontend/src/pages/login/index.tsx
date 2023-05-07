@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import './index.scss';
-import { Button, Card, Col, Input, Row, Space } from 'antd';
-import { Link } from 'react-router-dom';
+import { Button, Card, Col, Input, Row, Space, message } from 'antd';
+import { Link, useNavigate } from 'react-router-dom';
 import PublicLayout from '../../layouts/public';
 
 const LoginPage: React.FC = () => {
+	const navigate = useNavigate();
 	const [email, setEmail] = useState<string>('');
 	const [password, setPassword] = useState<string>('');
 
 	const onSubmit = async () => {
 		// function api here for login
+		localStorage.setItem('loggedIn', 'dummyLogin');
+		navigate('/');
+		message.success('Successfully logged in.');
 	};
 
 	return (
