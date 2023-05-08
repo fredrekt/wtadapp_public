@@ -42,7 +42,7 @@ const GeographicPage: React.FC = () => {
 									<Input.TextArea rows={3} />
 								</Form.Item>
 
-								<Form.Item className='formCta' wrapperCol={{ span: 4 }}>
+								<Form.Item className='formCta' wrapperCol={{ xs: 6, sm: 6, md: 8, lg: 4, xl: 4, xxl: 4 }}>
 									<Button type="primary" htmlType="submit">
 										Save
 									</Button>
