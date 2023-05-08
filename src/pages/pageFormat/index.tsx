@@ -19,9 +19,9 @@ const PageFormatPage: React.FC = () => {
 							<Form
 								className='pageFormatFormContainer'
 								name="basic"
-								labelCol={{ span: 10 }}
+								labelCol={{ xs: 21, sm: 21, md: 20, lg: 10, xl: 10, xxl: 10 }}
 								labelAlign='left'
-								wrapperCol={{ span: 14 }}
+								wrapperCol={{ xs: 3, sm: 3, md: 4, lg: 14, xl: 14, xxl: 14 }}
 								initialValues={{ remember: true }}
 								onFinish={onFinish}
 								autoComplete="off"
@@ -80,6 +80,8 @@ const PageFormatPage: React.FC = () => {
 								</Form.Item>
 
 								<Form.Item
+									labelCol={{ xs: 24, sm: 24, md: 24, lg: 10, xl: 10, xxl: 10 }}
+									wrapperCol={{ xs: 24, sm: 24, md: 24, lg: 14, xl: 14, xxl: 14 }}
 									className='customFormRowInputContainer'
 									label={
 										<div className='customLabel'>
