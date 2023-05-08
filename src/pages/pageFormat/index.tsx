@@ -13,7 +13,7 @@ const PageFormatPage: React.FC = () => {
 		<AdminLayout className="pageFormatPage">
 			<div className='pageFormatContent'>
 				<Row gutter={[16 ,16]}>
-					<Col span={14}>
+					<Col xs={24} sm={24} md={14} lg={14} xl={14} xxl={14}>
 						<Card>
 							<Typography.Title className='formTitle' level={4}>Page format</Typography.Title>
 							<Form
@@ -109,7 +109,7 @@ const PageFormatPage: React.FC = () => {
 							</Form>
 						</Card>
 					</Col>
-					<Col className='logoContent' span={10}>
+					<Col className='logoContent' xs={24} sm={24} md={10} lg={10} xl={10} xxl={10}>
 						<Card className='fullHeightCard'>
 							<Typography.Title className='mapTitle' level={4}>LOGO</Typography.Title>
 							<div className="imgContainer">
