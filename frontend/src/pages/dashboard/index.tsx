@@ -164,7 +164,7 @@ const DashboardPage: React.FC = () => {
 			<div className="dashboardRow">
 				<div className="dashboardContent">
 						<Row gutter={[24, 24]}>
-							<Col span={12}>
+							<Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
 								<Card bordered={false}>
 									<Statistic
 										title="Active"
@@ -176,7 +176,7 @@ const DashboardPage: React.FC = () => {
 									/>
 								</Card>
 							</Col>
-							<Col span={12}>
+							<Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
 								<Card bordered={false}>
 									<Statistic
 										title="Active"
