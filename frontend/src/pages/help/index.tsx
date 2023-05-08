@@ -13,7 +13,7 @@ const HelpPage: React.FC = () => {
 		<AdminLayout className="helpPage">
 			<div className="helpPageContent">
 				<Row>
-					<Col span={10}>
+					<Col xs={24} sm={24} md={18} lg={10} xl={10} xxl={10}>
 						<Card>
 						<Typography.Title className='formTitle' level={4}>Create a ticket</Typography.Title>
 							<Form
