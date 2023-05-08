@@ -12,7 +12,16 @@ interface AdminLayoutProps {
 const AdminLayout: React.FC<AdminLayoutProps> = ({ children, className }) => {
 	return (
 		<Layout className={`wtdAdminLayout ${className}`}>
-			<Sider>
+			<Sider
+				breakpoint="lg"
+				collapsedWidth="0"
+				onBreakpoint={(broken) => {
+					console.log(broken);
+				}}
+				onCollapse={(collapsed, type) => {
+					console.log(collapsed, type);
+				}}
+			>
 				<SideNav />
 			</Sider>
 			<Content>{children}</Content>
