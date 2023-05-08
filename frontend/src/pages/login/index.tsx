@@ -19,7 +19,7 @@ const LoginPage: React.FC = () => {
 	return (
 		<PublicLayout className="loginPage">
 			<Row className="loginContainer" justify={'center'} align={'middle'}>
-				<Col span={5}>
+				<Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
 					<Card className="loginCardContainer">
 						<Input
 							className="loginEmail"
@@ -35,14 +35,20 @@ const LoginPage: React.FC = () => {
 							placeholder="Password"
 							onChange={(e: any) => setPassword(e.target.value)}
 						/>
-						<Space size={12} className="loginCta" direction="vertical">
-							<Button size="large" onClick={() => onSubmit()} type="primary">
-								Login
-							</Button>
-							<Link to="/register">
-								<Button size="large">Create an account</Button>
-							</Link>
-						</Space>
+						<Row className='loginCta' align='middle' justify={'center'}>
+							<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
+								<Button size="large" onClick={() => onSubmit()} type="primary">
+									Login
+								</Button>
+							</Col>
+						</Row>
+						<Row className='createAccount' align='middle' justify={'center'}>
+							<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
+								<Link to="/register">
+									<Button size="large">Create an account</Button>
+								</Link>
+							</Col>
+						</Row>
 						<Space className="forgotPassword">
 							<Link to="/forgot-password">Forgot your password?</Link>
 						</Space>

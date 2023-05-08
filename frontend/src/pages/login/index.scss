@@ -28,7 +28,17 @@
 				width: 100%;
 				margin-top: 25px;
 				button {
-					width: 50%;
+					width: 100%;
+					margin: auto;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.createAccount {
+				width: 100%;
+				margin-top: 12px;
+				button {
+					width: 100%;
 					margin: auto;
 					display: flex;
 					justify-content: center;
