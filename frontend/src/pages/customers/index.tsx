@@ -121,19 +121,19 @@ const CustomersPage: React.FC = () => {
 		<AdminLayout className="customersPage">
 			<div className="customerPageContent">
 				<Row className="pageHeaderCta" align={'middle'} justify="end">
-					<Col span={2}>
+					<Col lg={2} xl={2} xxl={2}>
 						<Button type="primary">Export</Button>
 					</Col>
 				</Row>
 
 				<Card className="customerCardFilter">
 					<Row gutter={[16, 16]} className="pageHeaderFilters" align={'middle'}>
-						<Col span={12}>
+						<Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12}>
 							<Typography.Title className="filterTitle" level={4}>
 								Customers
 							</Typography.Title>
 						</Col>
-						<Col span={4}>
+						<Col xs={8} sm={8} lg={4} xl={4} xxl={4}>
 							<Select
 								className="filterSelect"
 								placeholder={'A-Z'}
@@ -153,7 +153,7 @@ const CustomersPage: React.FC = () => {
 								]}
 							/>
 						</Col>
-						<Col span={4}>
+						<Col xs={8} sm={8} lg={4} xl={4} xxl={4}>
 							<Select
 								className="filterSelect"
 								placeholder={'Higher'}
@@ -164,7 +164,7 @@ const CustomersPage: React.FC = () => {
 								]}
 							/>
 						</Col>
-						<Col span={4}>
+						<Col xs={8} sm={8} lg={4} xl={4} xxl={4}>
 							<Select
 								className="filterSelect"
 								placeholder={'Man'}
