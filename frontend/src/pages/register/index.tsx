@@ -37,7 +37,7 @@ const RegisterPage: React.FC = () => {
 		<PublicLayout className="registerPage">
 			<Row className="registerContainer" justify={'center'} align={'middle'}>
 				{step === 1 && (
-					<Col span={5}>
+					<Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
 						<Card className="registerCardContainer">
 							<Input
 								className="registerBusinessName"
@@ -85,7 +85,7 @@ const RegisterPage: React.FC = () => {
 					</Col>
 				)}
 				{step !== 1 && step !== 0 && (
-					<Col span={20}>
+					<Col xs={20} sm={20} md={20} lg={20} xl={20} xxl={20}>
 						<Card className="registerChooseSetup">
 							<Typography.Title className="chooseSetupHeaderTxt" level={2}>
 								{step <= 2 ? `Loyalty system setup` : 'Subscription'}
@@ -109,12 +109,29 @@ const RegisterPage: React.FC = () => {
 							)}
 							{step === 2 && (
 								<Row
-									gutter={40}
+									gutter={[
+										{
+											xs: 16,
+											sm: 16,
+											md: 24,
+											lg: 40,
+											xl: 40,
+											xxl: 40
+										},
+										{
+											xs: 16,
+											sm: 16,
+											md: 24,
+											lg: 40,
+											xl: 40,
+											xxl: 40
+										}
+									]}
 									align={'middle'}
 									justify={'center'}
 									className="chooseSetupSelectionContainer"
 								>
-									<Col span={6}>
+									<Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6}>
 										<SetupSelection
 											activeSetup={chooseSetup}
 											currentSetup={1}
@@ -129,7 +146,7 @@ const RegisterPage: React.FC = () => {
                                     </Typography.Paragraph> */}
 										</SetupSelection>
 									</Col>
-									<Col span={6}>
+									<Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6}>
 										<SetupSelection
 											activeSetup={chooseSetup}
 											currentSetup={2}
