@@ -11,7 +11,7 @@ const SettingsPage: React.FC = () => {
 		<AdminLayout className="settingsPage">
 			<div className="settingsContent">
 				<Row>
-					<Col span={10}>
+					<Col xs={24} sm={24} md={18} lg={10} xl={10} xxl={10}>
 						<Card>
 							<Typography.Title className='formTitle' level={4}>Settings</Typography.Title>
 							<Form
@@ -61,7 +61,7 @@ const SettingsPage: React.FC = () => {
 									<Button type="primary">Change</Button>
 								</Form.Item>
 
-								<Form.Item className='formCta' wrapperCol={{ span: 4 }}>
+								<Form.Item className='formCta' wrapperCol={{ xs: 4, sm: 4, md: 4, lg: 4, xl: 4, xxl: 4 }}>
 									<Button type="primary" htmlType="submit">
 										Save
 									</Button>
