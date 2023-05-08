@@ -124,6 +124,9 @@
                     left: 0;
                     right: 0;
                     bottom: 50px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
                     .ctaAddToAppleWallet {
                         width: 100%;
                         height: 100%;
@@ -144,19 +147,57 @@
         * --------------------------------------------
         */
         @media all and (min-width: 1024px) and (max-width: 1280px) {
-
+            .cardContent {
+                .ant-card {
+                    .ctaFooter {
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
         }
 
         @media all and (min-width: 768px) and (max-width: 1024px) {
             margin-top: 30px;
+            .cardContent {
+                .ant-card {
+                    .ctaFooter {
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            } 
         }
 
         @media all and (min-width: 480px) and (max-width: 768px) {
             margin-top: 30px;
+            .cardContent {
+                .ant-card {
+                    .ctaFooter {
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            } 
         }
 
         @media all and (max-width: 480px) {
             margin-top: 20px;
+            .cardContent {
+                .ant-card {
+                    .ctaFooter {
+                        position: unset;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        width: 150px;
+                        margin-top: 20px;
+                    }
+                }
+            }
         }
     }
 }
