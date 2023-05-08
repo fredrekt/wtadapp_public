@@ -12,7 +12,7 @@ const CardFormatPage: React.FC = () => {
 		<AdminLayout className="cardFormatPage">
 			<div className='cardFormatContent'>
 				<Row gutter={[16 ,16]}>
-					<Col span={14}>
+					<Col xs={24} sm={24} md={14} lg={14} xl={14} xxl={14}>
 						<Card>
 							<Typography.Title className='formTitle' level={4}>Card format</Typography.Title>
 							<Form
@@ -91,7 +91,7 @@ const CardFormatPage: React.FC = () => {
 							</Form>
 						</Card>
 					</Col>
-					<Col className='cardContent' span={10}>
+					<Col className='cardContent' xs={24} sm={24} md={10} lg={10} xl={10} xxl={10}>
 						<Card className='fullHeightCard'>
 							<div className="cardHeader">
 								<Typography.Title className='cardTitle' level={4}>LOGO</Typography.Title>
