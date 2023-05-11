@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.scss';
 import PublicLayout from '../../layouts/public';
-import { Button, Card, Col, Input, Result, Row, Space, Typography, message } from 'antd';
+import { Button, Card, Col, Input, Row, Space, Typography, message } from 'antd';
 import SetupSelection from '../../components/setupSelection/SetupSelection';
 import sittingImg from '../../assets/images/sitting_visit.png';
 import pointsImg from '../../assets/images/points_based.png';
