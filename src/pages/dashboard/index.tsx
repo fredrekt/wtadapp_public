@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.scss';
 import AdminLayout from '../../layouts/admin';
 import QRCodeComponent from '../../components/qrCode/QRCode';
@@ -16,6 +16,7 @@ import {
 	Tooltip,
 	Legend
 } from 'chart.js';
+import CreateCustomerPopup from '../../popups/createCustomerPopup/CreateCustomerPopup';
 
 interface DataType {
 	key: string;
@@ -26,6 +27,7 @@ interface DataType {
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 const DashboardPage: React.FC = () => {
+	const [openCreateCustomer, setOpenCreateCustomer] = useState<boolean>(false);
 	const columns: ColumnsType<DataType> = [
 		{
 			title: '#',
@@ -201,6 +203,7 @@ const DashboardPage: React.FC = () => {
 				</div>
 				<QRCodeComponent />
 			</div>
+			<CreateCustomerPopup opened={openCreateCustomer} onCancel={() => setOpenCreateCustomer(false)} />
 		</AdminLayout>
 	);
 };
