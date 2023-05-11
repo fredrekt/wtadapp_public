@@ -208,19 +208,31 @@ const RegisterPage: React.FC = () => {
 								Subscription
 							</Typography.Title>
 							<Typography.Paragraph className="chooseSetupSubTxt">
-								You can test the platform for 7 days and generate loyalty cards for your customers
+								We don't have many packages, just one package that has all the features. You can try the platform.
 							</Typography.Paragraph>
-							<Typography.Paragraph className="chooseSetupSubTxt">or</Typography.Paragraph>
-							<Typography.Paragraph className="chooseSetupSubTxt">
-								Subscribe with us and get all the features, and unlimited customers
-							</Typography.Paragraph>
-							<Result
-								title="Feature is in progress."
-								subTitle="Either this will be a pricing table or a form to enter card details."
-							/>
+							<div className="planPricing">
+								<div className="pricingContainer">
+									<Typography.Title className='textPrimary' level={1}>
+										000 SAR
+									</Typography.Title>
+									<Typography.Text className='pricingSubTxt textPrimary'>Per month</Typography.Text>
+								</div>
+								<div className="pricingFeaturesList">
+									<ul>
+										<li>Unlimited cards</li>
+										<li>Design your own cards</li>
+										<li>Unlimited stamps & rewards</li>
+										<li>Unlimited notifications</li>
+										<li>Customize registration page</li>
+										<li>Our full support</li>
+										<li>Access to all our features</li>
+									</ul>
+								</div>
+							</div>
 							<div className="chooseSetupCta">
+								<Button className='freeTrial' size="large" type='default'>Start trial</Button>
 								<Button onClick={onSubscribe} type="primary" size="large">
-									Subscribe now
+									Subscribe
 								</Button>
 							</div>
 						</Card>
