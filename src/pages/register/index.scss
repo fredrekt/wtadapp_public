@@ -39,11 +39,36 @@
 					font-weight: 700;
 				}
 			}
+			.verifyTitleHeader {
+				color: #a39d9d;
+				text-align: center;
+			}
+			.verifyEmailTxt {
+				color: #4525E1;
+				cursor: pointer;
+				font-weight: 700;
+				margin-bottom: 10px;
+				display: block;
+				text-align: center;
+			}
 			.registerCta {
 				width: 100%;
 				margin-top: 50px;
 				button {
 					width: 50%;
+					margin: auto;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.verificationCta {
+				width: 100%;
+				margin-top: 15px;
+				&.confirm {
+					margin-top: 25px;
+				}
+				button {
+					width: 100%;
 					margin: auto;
 					display: flex;
 					justify-content: center;
