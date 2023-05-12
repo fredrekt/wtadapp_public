@@ -18,7 +18,7 @@ body {
 }
 
 .ant-card {
-	box-shadow: 0px 6px 16px #f0edfd, 0px 3px 6px -4px #f0edfd;
+	box-shadow: 0px -4px 10px #E0DAFE, 0px 3px 6px 4px #E0DAFE !important;
 }
 
 .fullHeightCard {
@@ -27,4 +27,13 @@ body {
 
 .textPrimary {
 	color: #421aff!important;
+}
+
+.appLogoSidenav {
+	position: absolute;
+    top: 25px;
+    width: 100px;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
