@@ -3,11 +3,7 @@ import './index.scss';
 import AdminLayout from '../../layouts/admin';
 import { Button, Card, Col, Row, Select, Table, Typography, Space } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
-import {
-	PhoneOutlined,
-	MessageOutlined,
-	WechatOutlined
-} from '@ant-design/icons';
+import { PhoneOutlined, MessageOutlined, WechatOutlined } from '@ant-design/icons';
 
 interface DataType {
 	key: string;
@@ -21,21 +17,21 @@ const CustomersPage: React.FC = () => {
 			title: '#',
 			dataIndex: 'key',
 			key: 'id',
-			render: (text) => <span className='textPrimary'>#{text}</span>,
+			render: (text) => <span className="textPrimary">#{text}</span>,
 			width: 50
 		},
 		{
 			title: 'Name',
 			dataIndex: 'name',
 			key: 'name',
-			render: (text) => <span className='textPrimary'>{text}</span>,
+			render: (text) => <span className="textPrimary">{text}</span>,
 			width: 200
 		},
 		{
 			title: 'Points',
 			dataIndex: 'points',
 			key: 'points',
-			render: (text) => <span className='textPrimary'>{text} Points</span>,
+			render: (text) => <span className="textPrimary">{text} Points</span>,
 			width: 100
 		},
 		{
@@ -58,63 +54,63 @@ const CustomersPage: React.FC = () => {
 		{
 			key: '1',
 			name: 'John Brown',
-			points: 32,
+			points: 32
 		},
 		{
 			key: '2',
 			name: 'Jim Green',
-			points: 42,
+			points: 42
 		},
 		{
 			key: '3',
 			name: 'Joe Black',
-			points: 32,
+			points: 32
 		},
 		{
 			key: '1',
 			name: 'John Brown',
-			points: 32,
+			points: 32
 		},
 		{
 			key: '2',
 			name: 'Jim Green',
-			points: 42,
+			points: 42
 		},
 		{
 			key: '3',
 			name: 'Joe Black',
-			points: 32,
+			points: 32
 		},
 		{
 			key: '1',
 			name: 'John Brown',
-			points: 32,
+			points: 32
 		},
 		{
 			key: '2',
 			name: 'Jim Green',
-			points: 42,
+			points: 42
 		},
 		{
 			key: '3',
 			name: 'Joe Black',
-			points: 32,
+			points: 32
 		},
 		{
 			key: '1',
 			name: 'John Brown',
-			points: 32,
+			points: 32
 		},
 		{
 			key: '2',
 			name: 'Jim Green',
-			points: 42,
+			points: 42
 		},
 		{
 			key: '3',
 			name: 'Joe Black',
-			points: 32,
-		},
+			points: 32
+		}
 	];
 
 	return (
@@ -178,7 +174,7 @@ const CustomersPage: React.FC = () => {
 					</Row>
 				</Card>
 
-				<Card className='customerCardTable'>
+				<Card className="customerCardTable">
 					<Row>
 						<Col span={24}>
 							<Table columns={columns} dataSource={data} />

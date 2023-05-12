@@ -1,36 +1,36 @@
 .settingsPage {
-    .settingsContent {
-        padding: 20px;
-        margin-top: 100px;
-        .formTitle {
-            color: #421aff;
-        }
-        .settingsFormContainer {
-            margin-top: 20px;
-            input {
-                background: #D1D4F8;
-            }
-            .formButton {
-                text-align: right;
-                button {
-                    width: 40%;
-                }
-            }
-            label {
-                font-weight: 700;
-                color: #421aff;
-            }
-            .formCta {
-                .ant-row {
-                    margin-top: 100px;
-                    justify-content: center;
-                }
-                button {
-                    width: 100%;
-                }
-            }
-        }
-        /**
+	.settingsContent {
+		padding: 20px;
+		margin-top: 100px;
+		.formTitle {
+			color: #421aff;
+		}
+		.settingsFormContainer {
+			margin-top: 20px;
+			input {
+				background: #d1d4f8;
+			}
+			.formButton {
+				text-align: right;
+				button {
+					width: 40%;
+				}
+			}
+			label {
+				font-weight: 700;
+				color: #421aff;
+			}
+			.formCta {
+				.ant-row {
+					margin-top: 100px;
+					justify-content: center;
+				}
+				button {
+					width: 100%;
+				}
+			}
+		}
+		/**
         * Basic CSS Media Query Template
         * ------------------------------------------
         *  Responsive Grid Media Queries - 1280, 1024, 768, 480
@@ -40,28 +40,27 @@
         *   480-less    - phone landscape & smaller
         * --------------------------------------------
         */
-        @media all and (min-width: 1024px) and (max-width: 1280px) {
+		@media all and (min-width: 1024px) and (max-width: 1280px) {
+		}
 
-        }
+		@media all and (min-width: 768px) and (max-width: 1024px) {
+			margin-top: 30px;
+		}
 
-        @media all and (min-width: 768px) and (max-width: 1024px) {
-            margin-top: 30px;
-        }
+		@media all and (min-width: 480px) and (max-width: 768px) {
+			margin-top: 30px;
+		}
 
-        @media all and (min-width: 480px) and (max-width: 768px) {
-            margin-top: 30px;
-        }
-
-        @media all and (max-width: 480px) {
-            margin-top: 20px;
-            .settingsFormContainer {
-                .formButton {
-                    text-align: left;
-                }
-                .formCta {
-                    text-align: center;
-                }
-            }
-        }
-    }
+		@media all and (max-width: 480px) {
+			margin-top: 20px;
+			.settingsFormContainer {
+				.formButton {
+					text-align: left;
+				}
+				.formCta {
+					text-align: center;
+				}
+			}
+		}
+	}
 }

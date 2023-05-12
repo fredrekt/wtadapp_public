@@ -37,14 +37,14 @@ const LoginPage: React.FC = () => {
 							placeholder="Password"
 							onChange={(e: any) => setPassword(e.target.value)}
 						/>
-						<Row className='loginCta' align='middle' justify={'center'}>
+						<Row className="loginCta" align="middle" justify={'center'}>
 							<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
 								<Button size="large" onClick={() => onSubmit()} type="primary">
 									Login
 								</Button>
 							</Col>
 						</Row>
-						<Row className='createAccount' align='middle' justify={'center'}>
+						<Row className="createAccount" align="middle" justify={'center'}>
 							<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
 								<Link to="/register">
 									<Button size="large">Create an account</Button>

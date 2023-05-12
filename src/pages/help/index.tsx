@@ -4,10 +4,7 @@ import AdminLayout from '../../layouts/admin';
 import { Card, Col, Form, Row, Typography, Button, Input } from 'antd';
 
 const HelpPage: React.FC = () => {
-
-	const onFinish = async () => {
-
-	}
+	const onFinish = async () => {};
 
 	return (
 		<AdminLayout className="helpPage">
@@ -15,12 +12,14 @@ const HelpPage: React.FC = () => {
 				<Row>
 					<Col xs={24} sm={24} md={18} lg={10} xl={10} xxl={10}>
 						<Card>
-						<Typography.Title className='formTitle' level={4}>Create a ticket</Typography.Title>
+							<Typography.Title className="formTitle" level={4}>
+								Create a ticket
+							</Typography.Title>
 							<Form
-								className='helpFormContainer'
+								className="helpFormContainer"
 								name="basic"
 								labelCol={{ span: 8 }}
-								labelAlign='left'
+								labelAlign="left"
 								wrapperCol={{ span: 24 }}
 								style={{ maxWidth: 600 }}
 								initialValues={{ remember: true }}
@@ -28,16 +27,14 @@ const HelpPage: React.FC = () => {
 								autoComplete="off"
 								colon={false}
 							>
-								<Form.Item
-									name="username"
-								>
+								<Form.Item name="username">
 									<Input.TextArea
 										rows={10}
 										placeholder="Type the problem or support you need so that we can provide assistance."
 									/>
 								</Form.Item>
 
-								<Form.Item className='formCta' wrapperCol={{ span: 4 }}>
+								<Form.Item className="formCta" wrapperCol={{ span: 4 }}>
 									<Button type="primary" htmlType="submit">
 										Send
 									</Button>

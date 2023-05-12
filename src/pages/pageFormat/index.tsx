@@ -6,35 +6,32 @@ import greyBg from '../../assets/images/grey_bg.jpg';
 import addToAppleWallet from '../../assets/images/addToAppleWallet.png';
 
 const PageFormatPage: React.FC = () => {
-	const onFinish = async () => {
-
-	}
+	const onFinish = async () => {};
 	return (
 		<AdminLayout className="pageFormatPage">
-			<div className='pageFormatContent'>
-				<Row gutter={[16 ,16]}>
+			<div className="pageFormatContent">
+				<Row gutter={[16, 16]}>
 					<Col xs={24} sm={24} md={14} lg={14} xl={14} xxl={14}>
 						<Card>
-							<Typography.Title className='formTitle' level={4}>Page format</Typography.Title>
+							<Typography.Title className="formTitle" level={4}>
+								Page format
+							</Typography.Title>
 							<Form
-								className='pageFormatFormContainer'
+								className="pageFormatFormContainer"
 								name="basic"
 								labelCol={{ xs: 21, sm: 21, md: 20, lg: 10, xl: 10, xxl: 10 }}
-								labelAlign='left'
+								labelAlign="left"
 								wrapperCol={{ xs: 3, sm: 3, md: 4, lg: 14, xl: 14, xxl: 14 }}
 								initialValues={{ remember: true }}
 								onFinish={onFinish}
 								autoComplete="off"
 								colon={false}
 							>
-
 								<Form.Item
-									className='customFormRowInputContainer'
+									className="customFormRowInputContainer"
 									label={
-										<div className='customLabel'>
-											<Typography.Title level={5}>
-												Logo
-											</Typography.Title>
+										<div className="customLabel">
+											<Typography.Title level={5}>Logo</Typography.Title>
 											<Typography.Paragraph>
 												Your business logo will appear at the top of the card.
 											</Typography.Paragraph>
@@ -46,12 +43,10 @@ const PageFormatPage: React.FC = () => {
 								</Form.Item>
 
 								<Form.Item
-									className='customFormRowInputContainer'
+									className="customFormRowInputContainer"
 									label={
-										<div className='customLabel'>
-											<Typography.Title level={5}>
-												Image
-											</Typography.Title>
+										<div className="customLabel">
+											<Typography.Title level={5}>Image</Typography.Title>
 											<Typography.Paragraph>
 												An image that will appear under your business logo.
 											</Typography.Paragraph>
@@ -63,31 +58,25 @@ const PageFormatPage: React.FC = () => {
 								</Form.Item>
 
 								<Form.Item
-									className='customFormRowInputContainer'
+									className="customFormRowInputContainer"
 									label={
-										<div className='customLabel'>
-											<Typography.Title level={5}>
-												Color
-											</Typography.Title>
-											<Typography.Paragraph>
-												Card color for your business.
-											</Typography.Paragraph>
+										<div className="customLabel">
+											<Typography.Title level={5}>Color</Typography.Title>
+											<Typography.Paragraph>Card color for your business.</Typography.Paragraph>
 										</div>
 									}
 									name="username"
 								>
-									<Button className='colorPicker' type="text"></Button>
+									<Button className="colorPicker" type="text"></Button>
 								</Form.Item>
 
 								<Form.Item
 									labelCol={{ xs: 24, sm: 24, md: 24, lg: 10, xl: 10, xxl: 10 }}
 									wrapperCol={{ xs: 24, sm: 24, md: 24, lg: 14, xl: 14, xxl: 14 }}
-									className='customFormRowInputContainer'
+									className="customFormRowInputContainer"
 									label={
-										<div className='customLabel'>
-											<Typography.Title level={5}>
-												Message
-											</Typography.Title>
+										<div className="customLabel">
+											<Typography.Title level={5}>Message</Typography.Title>
 											<Typography.Paragraph>
 												A message appears on the card add page.
 											</Typography.Paragraph>
@@ -98,7 +87,10 @@ const PageFormatPage: React.FC = () => {
 									<Input.TextArea rows={3} />
 								</Form.Item>
 
-								<Form.Item className='formCta' wrapperCol={{ xs: 6, sm: 6, md: 8, lg: 4, xl: 4, xxl: 4 }}>
+								<Form.Item
+									className="formCta"
+									wrapperCol={{ xs: 6, sm: 6, md: 8, lg: 4, xl: 4, xxl: 4 }}
+								>
 									<div className="formCtaMulti">
 										<Button type="primary" htmlType="submit">
 											Preview
@@ -111,15 +103,19 @@ const PageFormatPage: React.FC = () => {
 							</Form>
 						</Card>
 					</Col>
-					<Col className='logoContent' xs={24} sm={24} md={10} lg={10} xl={10} xxl={10}>
-						<Card className='fullHeightCard'>
-							<Typography.Title className='mapTitle' level={4}>LOGO</Typography.Title>
+					<Col className="logoContent" xs={24} sm={24} md={10} lg={10} xl={10} xxl={10}>
+						<Card className="fullHeightCard">
+							<Typography.Title className="mapTitle" level={4}>
+								LOGO
+							</Typography.Title>
 							<div className="imgContainer">
-								<img className='pageFormatImg' src={greyBg} alt="placeholder under logo" />
+								<img className="pageFormatImg" src={greyBg} alt="placeholder under logo" />
 							</div>
-							<Typography.Paragraph className='pageFormatSubText'>Write a weclome text that appears for your customers to download the card.</Typography.Paragraph>
+							<Typography.Paragraph className="pageFormatSubText">
+								Write a weclome text that appears for your customers to download the card.
+							</Typography.Paragraph>
 							<div className="ctaFooter">
-								<img className='ctaAddToAppleWallet' src={addToAppleWallet} alt="add to apple wallet" />
+								<img className="ctaAddToAppleWallet" src={addToAppleWallet} alt="add to apple wallet" />
 							</div>
 						</Card>
 					</Col>

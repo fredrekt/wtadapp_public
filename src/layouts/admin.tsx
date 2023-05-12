@@ -3,7 +3,7 @@ import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
 import React from 'react';
 import SideNav from '../components/sidenav/SideNav';
-import appLogo from '../assets/images/logo_white.png'
+import appLogo from '../assets/images/logo_white.png';
 
 interface AdminLayoutProps {
 	className: string;

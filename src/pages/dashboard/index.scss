@@ -1,12 +1,12 @@
 .dashboardPage {
-	height: auto!important;
+	height: auto !important;
 	.dashboardRow {
 		display: flex;
 		height: 100%;
 		width: 100%;
 		.dashboardContent {
 			width: 80%;
-            padding: 20px;
+			padding: 20px;
 			.greetingTxt {
 				font-weight: 700;
 			}
@@ -42,7 +42,6 @@
 	* --------------------------------------------
 	*/
 	@media all and (min-width: 1024px) and (max-width: 1280px) {
-
 	}
 
 	@media all and (min-width: 768px) and (max-width: 1024px) {

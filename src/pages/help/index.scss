@@ -1,27 +1,27 @@
 .helpPage {
-    .helpPageContent {
-        padding: 20px;
-        margin-top: 100px;
-        .formTitle {
-            color: #421aff;
-        }
-        .helpFormContainer {
-            margin-top: 20px;
-            textarea {
-                padding: 20px;
-                font-weight: 700;
-            }
-            .formCta {
-                .ant-row {
-                    margin-top: 100px;
-                    justify-content: center;
-                }
-                button {
-                    width: 100%;
-                }
-            }
-        }
-        /**
+	.helpPageContent {
+		padding: 20px;
+		margin-top: 100px;
+		.formTitle {
+			color: #421aff;
+		}
+		.helpFormContainer {
+			margin-top: 20px;
+			textarea {
+				padding: 20px;
+				font-weight: 700;
+			}
+			.formCta {
+				.ant-row {
+					margin-top: 100px;
+					justify-content: center;
+				}
+				button {
+					width: 100%;
+				}
+			}
+		}
+		/**
         * Basic CSS Media Query Template
         * ------------------------------------------
         *  Responsive Grid Media Queries - 1280, 1024, 768, 480
@@ -31,20 +31,19 @@
         *   480-less    - phone landscape & smaller
         * --------------------------------------------
         */
-        @media all and (min-width: 1024px) and (max-width: 1280px) {
+		@media all and (min-width: 1024px) and (max-width: 1280px) {
+		}
 
-        }
+		@media all and (min-width: 768px) and (max-width: 1024px) {
+			margin-top: 30px;
+		}
 
-        @media all and (min-width: 768px) and (max-width: 1024px) {
-            margin-top: 30px;
-        }
+		@media all and (min-width: 480px) and (max-width: 768px) {
+			margin-top: 30px;
+		}
 
-        @media all and (min-width: 480px) and (max-width: 768px) {
-            margin-top: 30px;
-        }
-
-        @media all and (max-width: 480px) {
-            margin-top: 20px;
-        }
-    }
+		@media all and (max-width: 480px) {
+			margin-top: 20px;
+		}
+	}
 }

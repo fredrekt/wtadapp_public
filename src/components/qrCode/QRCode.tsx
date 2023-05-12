@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './QRCode.scss';
 import { QRCode, Typography, theme, Button, message } from 'antd';
 import { WarningFilled } from '@ant-design/icons';
-import appLogo from '../../assets/images/iwan-dal-logo-AVLGRRJkqvs8e6wk.png-2.png'
+import appLogo from '../../assets/images/iwan-dal-logo-AVLGRRJkqvs8e6wk.png-2.png';
 
 interface QRCodeProps {}
 
@@ -10,13 +10,13 @@ const { useToken } = theme;
 
 const QRCodeComponent: React.FC<QRCodeProps> = () => {
 	const [qrValue, setQrValue] = useState<string>('h');
- 	const { token } = useToken();
+	const { token } = useToken();
 
 	const copyLink = () => {
 		navigator.clipboard.writeText(qrValue);
 		setQrValue('s');
-		message.success('Link copied.')
-	}
+		message.success('Link copied.');
+	};
 
 	return (
 		<div className="qrCodeComponent">
@@ -24,7 +24,7 @@ const QRCodeComponent: React.FC<QRCodeProps> = () => {
 				<Typography.Title className="qrHeaderTxt" level={4}>
 					Share your page
 				</Typography.Title>
-				<QRCode 
+				<QRCode
 					value={qrValue}
 					color={token.colorPrimary}
 					style={{
@@ -32,11 +32,11 @@ const QRCodeComponent: React.FC<QRCodeProps> = () => {
 						border: `none`
 					}}
 				/>
-				<Button className='qrCta' onClick={copyLink} type="primary">Copy link</Button>
+				<Button className="qrCta" onClick={copyLink} type="primary">
+					Copy link
+				</Button>
 			</div>
-			<div className="qrCta">
-				
-			</div>
+			<div className="qrCta"></div>
 			<div className="qrContent">
 				<Typography.Paragraph>
 					<WarningFilled />
@@ -53,9 +53,7 @@ const QRCodeComponent: React.FC<QRCodeProps> = () => {
 			</div>
 			<div className="qrFooter">
 				<img src={appLogo} alt="logo" className="qrFooterLogo" />
-				<Typography.Paragraph>
-					All rights reserved ©
-				</Typography.Paragraph>
+				<Typography.Paragraph>All rights reserved ©</Typography.Paragraph>
 			</div>
 		</div>
 	);

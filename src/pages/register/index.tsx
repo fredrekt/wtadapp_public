@@ -40,21 +40,21 @@ const RegisterPage: React.FC = () => {
 	};
 
 	const onResend = async () => {
-		message.success(`OTP resent to email.`)
-	}
+		message.success(`OTP resent to email.`);
+	};
 
 	const verifyOTP = async () => {
-		message.success(`OTP Verified succesfully.`)
+		message.success(`OTP Verified succesfully.`);
 		setStep(step + 1);
-	}
-  
+	};
+
 	return (
 		<PublicLayout className="registerPage">
 			<Row className="registerContainer" justify={'center'} align={'middle'}>
 				{step === 1 && (
 					<Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
 						<Card className="registerCardContainer">
-							<AppLogo/>
+							<AppLogo />
 							<Input
 								className="registerBusinessName"
 								name="businessName"
@@ -101,37 +101,39 @@ const RegisterPage: React.FC = () => {
 					</Col>
 				)}
 
-				{step === 2 && <Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
-					<Card className="registerCardContainer">
-						<AppLogo/>
-						<Typography.Title className='verifyTitleHeader' level={5}>
-							Verification number has been sent to the email
-						</Typography.Title>
-						<Typography.Text className='verifyEmailTxt'>
-							{email} (change)
-						</Typography.Text>
-						<Input
-							className="registerBusinessName"
-							name="otp"
-							size="large"
-							value={otp}
-							placeholder="Verification code"
-							onChange={(e: any) => setOTP(e.target.value)}
-						/>
-						<Row className='verificationCta confirm' align='middle' justify={'center'}>
-							<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
-								<Button size="large" onClick={verifyOTP} type="primary">
-									Confirm
-								</Button>
-							</Col>
-						</Row>
-						<Row className='verificationCta' align='middle' justify={'center'}>
-							<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
-								<Button onClick={onResend} type="ghost" size="large">Resend</Button>
-							</Col>
-						</Row>
-					</Card>
-				</Col>}
+				{step === 2 && (
+					<Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
+						<Card className="registerCardContainer">
+							<AppLogo />
+							<Typography.Title className="verifyTitleHeader" level={5}>
+								Verification number has been sent to the email
+							</Typography.Title>
+							<Typography.Text className="verifyEmailTxt">{email} (change)</Typography.Text>
+							<Input
+								className="registerBusinessName"
+								name="otp"
+								size="large"
+								value={otp}
+								placeholder="Verification code"
+								onChange={(e: any) => setOTP(e.target.value)}
+							/>
+							<Row className="verificationCta confirm" align="middle" justify={'center'}>
+								<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
+									<Button size="large" onClick={verifyOTP} type="primary">
+										Confirm
+									</Button>
+								</Col>
+							</Row>
+							<Row className="verificationCta" align="middle" justify={'center'}>
+								<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
+									<Button onClick={onResend} type="ghost" size="large">
+										Resend
+									</Button>
+								</Col>
+							</Row>
+						</Card>
+					</Col>
+				)}
 
 				{step === 3 && (
 					<Col xs={20} sm={20} md={20} lg={20} xl={20} xxl={20}>
@@ -203,7 +205,7 @@ const RegisterPage: React.FC = () => {
 						</Card>
 					</Col>
 				)}
-				
+
 				{step === 4 && (
 					<Col xs={20} sm={20} md={20} lg={20} xl={20} xxl={20}>
 						<Card className="registerChooseSetup">
@@ -211,14 +213,15 @@ const RegisterPage: React.FC = () => {
 								Subscription
 							</Typography.Title>
 							<Typography.Paragraph className="chooseSetupSubTxt">
-								We don't have many packages, just one package that has all the features. You can try the platform.
+								We don't have many packages, just one package that has all the features. You can try the
+								platform.
 							</Typography.Paragraph>
 							<div className="planPricing">
 								<div className="pricingContainer">
-									<Typography.Title className='textPrimary' level={1}>
+									<Typography.Title className="textPrimary" level={1}>
 										000 SAR
 									</Typography.Title>
-									<Typography.Text className='pricingSubTxt textPrimary'>Per month</Typography.Text>
+									<Typography.Text className="pricingSubTxt textPrimary">Per month</Typography.Text>
 								</div>
 								<div className="pricingFeaturesList">
 									<ul>
@@ -233,7 +236,9 @@ const RegisterPage: React.FC = () => {
 								</div>
 							</div>
 							<div className="chooseSetupCta">
-								<Button className='freeTrial' size="large" type='default'>Start trial</Button>
+								<Button className="freeTrial" size="large" type="default">
+									Start trial
+								</Button>
 								<Button onClick={onSubscribe} type="primary" size="large">
 									Subscribe
 								</Button>
@@ -241,7 +246,6 @@ const RegisterPage: React.FC = () => {
 						</Card>
 					</Col>
 				)}
-
 			</Row>
 		</PublicLayout>
 	);
