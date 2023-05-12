@@ -5,6 +5,7 @@ import { WarningFilled } from '@ant-design/icons';
 import appLogo from '../../assets/images/iwan-dal-logo-AVLGRRJkqvs8e6wk.png-2.png';
 import CreateCustomerPopup from '../../popups/createCustomerPopup/CreateCustomerPopup';
 import { PlusSquareOutlined, UserAddOutlined } from '@ant-design/icons';
+import CreateVisitStampPopup from '../../popups/createVisitStampPopup/CreateVisitStampPopup';
 
 interface QRCodeProps {}
 
@@ -63,6 +64,7 @@ const QRCodeComponent: React.FC<QRCodeProps> = () => {
 				<Typography.Paragraph>All rights reserved ©</Typography.Paragraph>
 			</div>
 			<CreateCustomerPopup opened={openCreateCustomer} onCancel={() => setOpenCreateCustomer(false)} />
+			<CreateVisitStampPopup opened={openVisitStamp} onCancel={() => setOpenVisitStamp(false)} />
 		</div>
 	);
 };
