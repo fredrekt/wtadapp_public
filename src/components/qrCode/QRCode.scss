@@ -27,6 +27,12 @@
 			}
 		}
 	}
+    .qrCtaContent {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        margin: 50px;
+    }
 	.qrFooter {
 		text-align: center;
 		position: absolute;
