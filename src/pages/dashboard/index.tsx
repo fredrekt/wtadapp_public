@@ -166,6 +166,11 @@ const DashboardPage: React.FC = () => {
 			<div className="dashboardRow">
 				<div className="dashboardContent">
 						<Row gutter={[24, 24]}>
+							<Col span={24}>
+								<Typography.Title className='greetingTxt' level={2}>
+									Hi Mashari, I hope you have a nice day
+								</Typography.Title>
+							</Col>
 							<Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
 								<Card bordered={false}>
 									<Statistic
