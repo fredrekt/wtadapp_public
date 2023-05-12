@@ -6,6 +6,7 @@ import SetupSelection from '../../components/setupSelection/SetupSelection';
 import sittingImg from '../../assets/images/sitting_visit.png';
 import pointsImg from '../../assets/images/points_based.png';
 import { useNavigate } from 'react-router-dom';
+import AppLogo from '../../components/appLogo/AppLogo';
 
 const RegisterPage: React.FC = () => {
 	const navigate = useNavigate();
@@ -53,6 +54,7 @@ const RegisterPage: React.FC = () => {
 				{step === 1 && (
 					<Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
 						<Card className="registerCardContainer">
+							<AppLogo/>
 							<Input
 								className="registerBusinessName"
 								name="businessName"
@@ -101,6 +103,7 @@ const RegisterPage: React.FC = () => {
 
 				{step === 2 && <Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
 					<Card className="registerCardContainer">
+						<AppLogo/>
 						<Typography.Title className='verifyTitleHeader' level={5}>
 							Verification number has been sent to the email
 						</Typography.Title>
