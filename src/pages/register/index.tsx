@@ -7,6 +7,15 @@ import sittingImg from '../../assets/images/sitting_visit.png';
 import pointsImg from '../../assets/images/points_based.png';
 import { useNavigate } from 'react-router-dom';
 import AppLogo from '../../components/appLogo/AppLogo';
+import axios from 'axios';
+
+interface UserRegister {
+	email: string;
+	password: string;
+	username: string;
+	phone: string;
+	calculationMethod: string;
+}
 
 const RegisterPage: React.FC = () => {
 	const navigate = useNavigate();
@@ -20,23 +29,52 @@ const RegisterPage: React.FC = () => {
 	const [chooseSetup, setChooseSetup] = useState<number>(0);
 	const [otp, setOTP] = useState<string>('');
 
-	const onRegister = async () => {
+	const { businessName, email, password, phone } = formData;
+
+	const onVerify = () => {
 		if (!email) {
 			message.error('Must provide a valid email address.');
 			return;
 		}
+		if (!password) {
+			message.error('Must provide a valid password.');
+			return;
+		}
 		setStep(2);
+	}
+
+	const onRegister = async () => {
+		if (!chooseSetup) {
+			message.error(`Must select loyalty setup system.`)
+			return;
+		}
+		let userRegister: UserRegister = {
+			email,
+			password,
+			username: email,
+			phone,
+			calculationMethod: chooseSetup === 1 ? 'points' : 'visits'
+		}
+		const res = await axios.post(`https://wtadapp.herokuapp.com/api/auth/register`, userRegister);
+		if (res) {
+			setStep(step +1);
+		}
 	};
 
-	const { businessName, email, password, phone } = formData;
 
 	const onChange = (e: any) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
 
 	const onSubscribe = async () => {
-		localStorage.setItem('loggedIn', 'dummyLogin');
-		navigate('/');
+		const res = await axios.post('https://wtadapp.herokuapp.com/api/auth/login', {
+			email,
+			password
+		});
+		if (res.status === 200 && res.headers.xauth) {
+			localStorage.setItem('wtadappToken', res.headers.xauth);
+			navigate('/');
+		}
 	};
 
 	const onResend = async () => {
@@ -88,7 +126,7 @@ const RegisterPage: React.FC = () => {
 								onChange={onChange}
 							/>
 							<Space size={12} className="registerCta" direction="vertical">
-								<Button size="large" onClick={() => onRegister()} type="primary">
+								<Button size="large" onClick={onVerify} type="primary">
 									Register now
 								</Button>
 							</Space>
@@ -197,7 +235,7 @@ const RegisterPage: React.FC = () => {
 									disabled={!chooseSetup}
 									type="primary"
 									size="large"
-									onClick={() => setStep(step + 1)}
+									onClick={onRegister}
 								>
 									NEXT
 								</Button>

@@ -4,6 +4,7 @@ import { Button, Card, Col, Input, Row, Space, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import PublicLayout from '../../layouts/public';
 import AppLogo from '../../components/appLogo/AppLogo';
+import axios from 'axios';
 
 const LoginPage: React.FC = () => {
 	const navigate = useNavigate();
@@ -12,9 +13,17 @@ const LoginPage: React.FC = () => {
 
 	const onSubmit = async () => {
 		// function api here for login
-		localStorage.setItem('loggedIn', 'dummyLogin');
-		navigate('/');
-		message.success('Successfully logged in.');
+		const res = await axios.post(`https://wtadapp.herokuapp.com/api/auth/login`, {
+			email,
+			password
+		});
+		if (res.status === 200 && res.headers.xauth) {
+			localStorage.setItem('wtadappToken', res.headers.xauth);
+			navigate('/');
+			message.success('Successfully logged in.');
+		} else {
+			message.error('Email/Password is incorrect.')
+		}
 	};
 
 	return (
