@@ -22,7 +22,7 @@ const SideNav: React.FC = () => {
 	const logout = () => {
 		navigate(`/login`);
 		message.success('Successfully logged out.');
-		localStorage.removeItem('loggedIn');
+		localStorage.removeItem('wtadappToken');
 	};
 
 	const topItems: MenuItem[] = [
