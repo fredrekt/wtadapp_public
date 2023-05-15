@@ -9,7 +9,7 @@ const ProtectedRoute: React.FC<ProtectedRouteInterface> = (props) => {
 	const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
 
 	const checkUser = async () => {
-		let res = localStorage.getItem('loggedIn');
+		let res = localStorage.getItem('wtadappToken');
 		if (!res) {
 			setIsLoggedIn(false);
 		} else {

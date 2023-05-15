@@ -22,6 +22,7 @@
     "typescript": "^5.0.4",
     "web-vitals": "^2.1.0"
   },
+  "proxy": "https://wtadapp.herokuapp.com/api",
   "scripts": {
     "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
