@@ -32,11 +32,19 @@
 					}
 				}
 			}
+			.phoneContainerSpace {
+				width: 100%;
+				.compactPhoneContainer {
+					width: 100%;
+				}
+			}
 			.registerPhone {
 				margin: 6px 0;
 				text-align: center;
-				&::placeholder {
-					font-weight: 700;
+				input {
+					&::placeholder {
+						font-weight: 700;
+					}
 				}
 			}
 			.verifyTitleHeader {
