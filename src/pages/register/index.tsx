@@ -76,8 +76,8 @@ const RegisterPage: React.FC = () => {
 			email,
 			password
 		});
-		if (res.status === 200 && res.headers.xauth) {
-			localStorage.setItem('wtadappToken', res.headers.xauth);
+		if (res.status === 200) {
+			localStorage.setItem('wtadappToken', res.data.token);
 			navigate('/');
 		}
 	};

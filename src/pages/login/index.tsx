@@ -13,12 +13,12 @@ const LoginPage: React.FC = () => {
 
 	const onSubmit = async () => {
 		// function api here for login
-		const res = await axios.post(`https://wtadapp.herokuapp.com/api/auth/login`, {
+		const res = await axios.post(`/auth/login`, {
 			email,
 			password
 		});
-		if (res.status === 200 && res.headers.xauth) {
-			localStorage.setItem('wtadappToken', res.headers.xauth);
+		if (res.status === 200) {
+			localStorage.setItem('wtadappToken', res.data.token);
 			navigate('/');
 			message.success('Successfully logged in.');
 		} else {
