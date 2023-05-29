@@ -63,6 +63,7 @@ const RegisterPage: React.FC = () => {
 		// };
 		// const res = await axios.post(`https://wtadapp.herokuapp.com/api/auth/register`, userRegister);
 		// if (res) {
+			console.log(phone);
 			setStep(step + 1);
 		// }
 	};
