@@ -4,7 +4,7 @@ import { Button, Card, Col, Input, Row, Space, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import PublicLayout from '../../layouts/public';
 import AppLogo from '../../components/appLogo/AppLogo';
-import axios from 'axios';
+// import axios from 'axios';
 
 const LoginPage: React.FC = () => {
 	const navigate = useNavigate();
@@ -13,17 +13,22 @@ const LoginPage: React.FC = () => {
 
 	const onSubmit = async () => {
 		// function api here for login
-		const res = await axios.post(`/auth/login`, {
-			email,
-			password
-		});
-		if (res.status === 200) {
-			localStorage.setItem('wtadappToken', res.data.token);
-			navigate('/');
-			message.success('Successfully logged in.');
-		} else {
-			message.error('Email/Password is incorrect.')
-		}
+		// const res = await axios.post(`/auth/login`, {
+		// 	email,
+		// 	password
+		// });
+		// if (res.status === 200) {
+		// 	localStorage.setItem('wtadappToken', res.data.token);
+		// 	navigate('/');
+		// 	message.success('Successfully logged in.');
+		// } else {
+		// 	message.error('Email/Password is incorrect.')
+		// }
+
+		// dummy login
+		localStorage.setItem('wtadappToken', 'dummyLogin');
+		navigate('/');
+		message.success('Successfully logged in.');
 	};
 
 	return (

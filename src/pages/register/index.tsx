@@ -7,17 +7,17 @@ import sittingImg from '../../assets/images/sitting_visit.png';
 import pointsImg from '../../assets/images/points_based.png';
 import { useNavigate } from 'react-router-dom';
 import AppLogo from '../../components/appLogo/AppLogo';
-import axios from 'axios';
+// import axios from 'axios';
 import CountryPhoneInput, { ConfigProvider } from 'antd-country-phone-input';
 import en from 'world_countries_lists/data/countries/en/world.json';
 
-interface UserRegister {
-	email: string;
-	password: string;
-	username: string;
-	phone: string;
-	calculationMethod: string;
-}
+// interface UserRegister {
+// 	email: string;
+// 	password: string;
+// 	username: string;
+// 	phone: string;
+// 	calculationMethod: string;
+// }
 
 const RegisterPage: React.FC = () => {
 	const navigate = useNavigate();
@@ -54,17 +54,17 @@ const RegisterPage: React.FC = () => {
 			message.error(`Must select loyalty setup system.`);
 			return;
 		}
-		let userRegister: UserRegister = {
-			email,
-			password,
-			username: email,
-			phone,
-			calculationMethod: chooseSetup === 1 ? 'points' : 'visits'
-		};
-		const res = await axios.post(`https://wtadapp.herokuapp.com/api/auth/register`, userRegister);
-		if (res) {
+		// let userRegister: UserRegister = {
+		// 	email,
+		// 	password,
+		// 	username: email,
+		// 	phone,
+		// 	calculationMethod: chooseSetup === 1 ? 'points' : 'visits'
+		// };
+		// const res = await axios.post(`https://wtadapp.herokuapp.com/api/auth/register`, userRegister);
+		// if (res) {
 			setStep(step + 1);
-		}
+		// }
 	};
 
 	const onChange = (e: any) => {
@@ -72,14 +72,14 @@ const RegisterPage: React.FC = () => {
 	};
 
 	const onSubscribe = async () => {
-		const res = await axios.post('https://wtadapp.herokuapp.com/api/auth/login', {
-			email,
-			password
-		});
-		if (res.status === 200) {
-			localStorage.setItem('wtadappToken', res.data.token);
+		// const res = await axios.post('https://wtadapp.herokuapp.com/api/auth/login', {
+		// 	email,
+		// 	password
+		// });
+		// if (res.status === 200) {
+			localStorage.setItem('wtadappToken', 'dummyLogin');
 			navigate('/');
-		}
+		// }
 	};
 
 	const onResend = async () => {
