@@ -34,7 +34,7 @@ const LoginPage: React.FC = () => {
 	return (
 		<PublicLayout className="loginPage">
 			<Row className="loginContainer" justify={'center'} align={'middle'}>
-				<Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
+				<Col xs={20} sm={20} md={12} lg={9} xl={7} xxl={5}>
 					<Card className="loginCardContainer">
 						<AppLogo />
 						<Input
