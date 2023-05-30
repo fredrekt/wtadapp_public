@@ -19,7 +19,8 @@ root.render(
 				token: {
 					colorPrimary: '#421AFF',
 					borderRadius: 20,
-					borderRadiusLG: 40
+					borderRadiusLG: 40,
+					fontFamily: `Vazirmatn, sans-serif`
 				}
 			}}
 			locale={ar_EG}
