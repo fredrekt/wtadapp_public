@@ -31,6 +31,12 @@
 						font-weight: 700;
 					}
 				}
+				.ant-input-suffix {
+					position: absolute;
+					right: 10px;
+					top: 0;
+					bottom: 0;
+				}
 			}
 			.phoneContainerSpace {
 				width: 100%;
@@ -41,7 +47,15 @@
 			.registerPhone {
 				margin: 6px 0;
 				text-align: center;
+				.ant-input-prefix {
+					position: absolute;
+					left: 10px;
+					top: 0;
+					bottom: 0;
+					z-index: 1;
+				}
 				input {
+					text-align: center;
 					&::placeholder {
 						font-weight: 700;
 					}

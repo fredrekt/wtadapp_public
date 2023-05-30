@@ -97,7 +97,7 @@ const RegisterPage: React.FC = () => {
 			<ConfigProvider locale={en}>
 				<Row className="registerContainer" justify={'center'} align={'middle'}>
 					{step === 1 && (
-						<Col xs={20} sm={20} md={12} lg={5} xl={5} xxl={5}>
+						<Col xs={20} sm={20} md={12} lg={9} xl={7} xxl={5}>
 							<Card className="registerCardContainer">
 								<AppLogo />
 								<Input
