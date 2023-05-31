@@ -214,7 +214,7 @@ const RegisterPage: React.FC = () => {
 											activeSetup={chooseSetup}
 											currentSetup={1}
 											onClick={(setup: number) => setChooseSetup(setup)}
-											label="Based on points for 1 riyals"
+											label="Spending"
 										>
 											<div className="setupSelectionAsset">
 												<img src={pointsImg} alt="points" />
@@ -226,7 +226,7 @@ const RegisterPage: React.FC = () => {
 											activeSetup={chooseSetup}
 											currentSetup={2}
 											onClick={(setup: number) => setChooseSetup(setup)}
-											label="Based on the number of visits"
+											label="Visits"
 										>
 											<div className="setupSelectionAsset">
 												<img src={sittingImg} alt="visit" />
