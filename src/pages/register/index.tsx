@@ -95,7 +95,7 @@ const RegisterPage: React.FC = () => {
 	return (
 		<PublicLayout className="registerPage">
 			<ConfigProvider locale={en}>
-				<div className="registerContainer">
+				<div className={`registerContainer${step === 3 ? ' flexibleRegistrationContainer' : ''}`}>
 				<Row className="registerStepsContainer" justify={'center'} align={'middle'}>
 					{step === 1 && (
 						<Col xs={20} sm={20} md={12} lg={9} xl={7} xxl={5}>
