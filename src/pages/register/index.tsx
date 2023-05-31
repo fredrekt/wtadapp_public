@@ -10,6 +10,7 @@ import AppLogo from '../../components/appLogo/AppLogo';
 // import axios from 'axios';
 import CountryPhoneInput, { ConfigProvider } from 'antd-country-phone-input';
 import en from 'world_countries_lists/data/countries/en/world.json';
+import AppLogoFooter from '../../components/appLogo/AppLogoFooter';
 
 // interface UserRegister {
 // 	email: string;
@@ -95,7 +96,8 @@ const RegisterPage: React.FC = () => {
 	return (
 		<PublicLayout className="registerPage">
 			<ConfigProvider locale={en}>
-				<Row className="registerContainer" justify={'center'} align={'middle'}>
+				<div className="registerContainer">
+				<Row className="registerStepsContainer" justify={'center'} align={'middle'}>
 					{step === 1 && (
 						<Col xs={20} sm={20} md={12} lg={9} xl={7} xxl={5}>
 							<Card className="registerCardContainer">
@@ -283,6 +285,7 @@ const RegisterPage: React.FC = () => {
 						</Col>
 					)}
 				</Row>
+				</div>
 			</ConfigProvider>
 		</PublicLayout>
 	);

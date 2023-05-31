@@ -5,6 +5,11 @@
 		right: 0;
 		top: 0;
 		bottom: 50px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 25px;
 		.registerCardContainer {
 			.ant-card-body {
 				padding-top: 150px;
