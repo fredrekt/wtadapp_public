@@ -10,7 +10,6 @@ import AppLogo from '../../components/appLogo/AppLogo';
 // import axios from 'axios';
 import CountryPhoneInput, { ConfigProvider } from 'antd-country-phone-input';
 import en from 'world_countries_lists/data/countries/en/world.json';
-import AppLogoFooter from '../../components/appLogo/AppLogoFooter';
 
 // interface UserRegister {
 // 	email: string;
