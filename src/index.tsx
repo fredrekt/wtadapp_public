@@ -19,7 +19,7 @@ root.render(
 				token: {
 					colorPrimary: '#411BFF',
 					borderRadius: 20,
-					borderRadiusLG: 40,
+					borderRadiusLG: 20,
 					fontFamily: `Vazirmatn, sans-serif`
 				}
 			}}
