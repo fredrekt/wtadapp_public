@@ -2,8 +2,8 @@ import React from 'react';
 import './index.scss';
 import AdminLayout from '../../layouts/admin';
 import QRCodeComponent from '../../components/qrCode/QRCode';
-import { Card, Col, Row, Space, Statistic, Table, Typography } from 'antd';
-import { ArrowUpOutlined, PhoneOutlined, MessageOutlined, WechatOutlined } from '@ant-design/icons';
+import { Card, Col, Row, Space, Table, Typography } from 'antd';
+import { PhoneOutlined, MessageOutlined, WechatOutlined } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
 import { Line } from 'react-chartjs-2';
 import {
