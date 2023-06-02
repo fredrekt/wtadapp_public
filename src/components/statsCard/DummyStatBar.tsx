@@ -1,20 +1,19 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Line } from 'react-chartjs-2';
+import { ChartOptions } from 'chart.js';
 
 interface DummyStatBarProps {
 	className: string;
 }
 
 const DummyStatBar: React.FC<DummyStatBarProps> = ({ className }) => {
-	const chartRef = useRef<any>(null);
-
 	const chartData = {
 		labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
 		datasets: [
 			{
 				label: 'Dataset 1',
 				data: [0, 20, 18, 40, 36, 60, 52, 30],
-				backgroundColor: '#401AFE',
+				backgroundColor: 'red', // Color for the filled area
 				borderColor: '#401AFE',
 				borderWidth: 10,
 				pointRadius: 0,
@@ -23,7 +22,7 @@ const DummyStatBar: React.FC<DummyStatBarProps> = ({ className }) => {
 		]
 	};
 
-	const chartOptions = {
+	const chartOptions: ChartOptions<'line'> = {
 		responsive: true,
 		maintainAspectRatio: false,
 		scales: {
@@ -32,7 +31,7 @@ const DummyStatBar: React.FC<DummyStatBarProps> = ({ className }) => {
 				beginAtZero: true
 			},
 			x: {
-				display: false // Hide x-axis labels
+				display: false // Hide x-axis labels,
 			}
 		},
 		elements: {
@@ -47,7 +46,7 @@ const DummyStatBar: React.FC<DummyStatBarProps> = ({ className }) => {
 		}
 	};
 
-	return <Line ref={chartRef} className={className} data={chartData} options={chartOptions} />;
+	return <Line data={chartData} options={chartOptions} />;
 };
 
 export default DummyStatBar;
