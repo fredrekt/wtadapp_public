@@ -182,7 +182,7 @@ const DashboardPage: React.FC = () => {
 					<Row gutter={[24, 24]}>
 						<Col span={24}>
 							<Typography.Title className="greetingTxt" level={2}>
-								Hi Mashari, I hope you have a nice day
+								Hi Meshari, I hope you have a nice day
 							</Typography.Title>
 						</Col>
 						<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
