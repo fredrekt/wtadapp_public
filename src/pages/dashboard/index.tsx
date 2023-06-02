@@ -16,6 +16,7 @@ import {
 	Tooltip,
 	Legend
 } from 'chart.js';
+import StatsCard from '../../components/statsCard/StatsCard';
 
 interface DataType {
 	key: string;
@@ -127,36 +128,51 @@ const DashboardPage: React.FC = () => {
 		}
 	];
 
-	const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-
-	const options = {
-		responsive: true,
-		plugins: {
-			legend: {
-				position: 'top' as const
-			},
-			title: {
-				display: true,
-				text: 'Chart.js Line Chart'
-			}
-		}
-	};
-	const lineData = {
-		labels,
+	const chartData = {
+		labels: ['1', '2', '3', '4', '5', '6', '7'],
 		datasets: [
 			{
 				label: 'Dataset 1',
-				data: labels.map(() => 100),
-				borderColor: 'rgb(255, 99, 132)',
-				backgroundColor: 'rgba(255, 99, 132, 0.5)'
+				data: [0, 20, 18, 40, 36, 60, 52, 30],
+				backgroundColor: '#401AFE',
+				borderColor: '#401AFE',
+				borderWidth: 10,
+				pointRadius: 0,
+				fill: true
 			},
 			{
-				label: 'Dataset 2',
-				data: labels.map(() => 200),
-				borderColor: 'rgb(53, 162, 235)',
-				backgroundColor: 'rgba(53, 162, 235, 0.5)'
+				label: 'Dataset 1',
+				data: [2, 22, 18, 44, 37, 22, 32, 0],
+				backgroundColor: '#401AFE',
+				borderColor: '#401AFE',
+				borderWidth: 10,
+				pointRadius: 0,
+				fill: true
 			}
 		]
+	};
+
+	const chartOptions = {
+		responsive: true,
+		scales: {
+			y: {
+				display: true,
+				beginAtZero: true
+			},
+			x: {
+				display: true // Hide x-axis labels
+			}
+		},
+		elements: {
+			line: {
+				tension: 0 // Set the line tension to 0 for straight lines
+			}
+		},
+		plugins: {
+			legend: {
+				display: false // Hide the legend if desired
+			}
+		}
 	};
 
 	return (
@@ -169,33 +185,18 @@ const DashboardPage: React.FC = () => {
 								Hi Mashari, I hope you have a nice day
 							</Typography.Title>
 						</Col>
-						<Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
-							<Card bordered={false}>
-								<Statistic
-									title="Active"
-									value={11.28}
-									precision={2}
-									valueStyle={{ color: '#3f8600' }}
-									prefix={<ArrowUpOutlined />}
-									suffix="%"
-								/>
-							</Card>
+						<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+							<StatsCard title="Total Points" count={1000} label="This month" newCount={100} positive />
 						</Col>
-						<Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
-							<Card bordered={false}>
-								<Statistic
-									title="Active"
-									value={11.28}
-									precision={2}
-									valueStyle={{ color: '#3f8600' }}
-									prefix={<ArrowUpOutlined />}
-									suffix="%"
-								/>
-							</Card>
+						<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+							<StatsCard title="Total Cards" count={612} label="This month" newCount={2} positive />
+						</Col>
+						<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+							<StatsCard title="Total Visits" count={92} label="This month" newCount={21} positive />
 						</Col>
 					</Row>
 					<Card className="dashboardLineGraphChart">
-						<Line options={options} data={lineData} />
+						<Line data={chartData} options={chartOptions} />
 					</Card>
 					<Card className="customerCardTable">
 						<Typography.Title className="textPrimary tableTitle" level={4}>

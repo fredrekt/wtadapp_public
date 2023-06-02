@@ -6,9 +6,21 @@
 		width: 100%;
 		.dashboardContent {
 			width: 80%;
-			padding: 20px;
+			padding: 20px 40px;
 			.greetingTxt {
 				font-weight: 700;
+			}
+			.statHeader {
+				display: flex;
+				justify-content: space-between;
+				.statTitle {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+				.statLabel {
+					color: #a39d9d;
+					margin-bottom: 0;
+				}
 			}
 			.dashboardLineGraphChart {
 				margin: 25px 0;
