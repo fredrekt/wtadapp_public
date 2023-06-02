@@ -19,6 +19,7 @@ const GeographicPage: React.FC = () => {
 								name="basic"
 								labelCol={{ span: 12 }}
 								labelAlign="left"
+								labelWrap
 								wrapperCol={{ span: 12 }}
 								initialValues={{ remember: true }}
 								onFinish={onFinish}

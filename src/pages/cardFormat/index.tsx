@@ -3,6 +3,7 @@ import './index.scss';
 import AdminLayout from '../../layouts/admin';
 import { Card, Col, Row, Typography, Form, Button, QRCode } from 'antd';
 import greyBg from '../../assets/images/grey_bg.jpg';
+import { ColorPicker } from 'antd';
 
 const CardFormatPage: React.FC = () => {
 	const onFinish = async () => {};
@@ -25,6 +26,7 @@ const CardFormatPage: React.FC = () => {
 								onFinish={onFinish}
 								autoComplete="off"
 								colon={false}
+								labelWrap
 							>
 								<Form.Item
 									className="customFormRowInputContainer"
@@ -66,7 +68,7 @@ const CardFormatPage: React.FC = () => {
 									}
 									name="username"
 								>
-									<Button className="colorPicker" type="text"></Button>
+									<ColorPicker className='colorPicker' />
 								</Form.Item>
 
 								<Form.Item

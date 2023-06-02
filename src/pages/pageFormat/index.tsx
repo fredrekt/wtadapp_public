@@ -4,6 +4,7 @@ import AdminLayout from '../../layouts/admin';
 import { Card, Col, Row, Typography, Form, Input, Button } from 'antd';
 import greyBg from '../../assets/images/grey_bg.jpg';
 import addToAppleWallet from '../../assets/images/addToAppleWallet.png';
+import { ColorPicker } from 'antd';
 
 const PageFormatPage: React.FC = () => {
 	const onFinish = async () => {};
@@ -26,6 +27,7 @@ const PageFormatPage: React.FC = () => {
 								onFinish={onFinish}
 								autoComplete="off"
 								colon={false}
+								labelWrap
 							>
 								<Form.Item
 									className="customFormRowInputContainer"
@@ -67,7 +69,7 @@ const PageFormatPage: React.FC = () => {
 									}
 									name="username"
 								>
-									<Button className="colorPicker" type="text"></Button>
+									<ColorPicker className='colorPicker' />
 								</Form.Item>
 
 								<Form.Item

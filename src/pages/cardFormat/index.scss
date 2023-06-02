@@ -18,16 +18,21 @@
 				background: #f2f1f8;
 				padding: 10px;
 				border-radius: 10px;
+				.colorPicker {
+					margin-left: auto;
+					background: unset;
+					border: unset;
+					margin-top: 14px;
+					margin-bottom: 14px;
+					margin-right: 14px;
+					.ant-color-picker-color-block-inner {
+						border-radius: 50px;
+					}
+				}
 				.ant-form-item-control-input-content {
 					text-align: right;
 					button {
 						height: 50px;
-						&.colorPicker {
-							background: #411BFF;
-							border-radius: 50%;
-							height: 30px;
-							margin: 14px;
-						}
 					}
 				}
 			}
