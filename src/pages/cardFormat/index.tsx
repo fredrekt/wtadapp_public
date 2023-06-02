@@ -114,7 +114,7 @@ const CardFormatPage: React.FC = () => {
 									value={'qrValue'}
 									color={'#000000'}
 									style={{
-										background: `#ffffff`,
+										background: `#ffffff!important`,
 										border: `none`,
 										borderRadius: `4px`
 									}}
