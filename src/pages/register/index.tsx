@@ -3,13 +3,15 @@ import './index.scss';
 import PublicLayout from '../../layouts/public';
 import { Button, Card, Col, Input, Row, Space, Typography, message } from 'antd';
 import SetupSelection from '../../components/setupSelection/SetupSelection';
-import sittingImg from '../../assets/images/sitting_visit.png';
-import pointsImg from '../../assets/images/points_based.png';
+import sittingImg from '../../assets/images/visit.png';
+import pointsImg from '../../assets/images/point.png';
 import { useNavigate } from 'react-router-dom';
 import AppLogo from '../../components/appLogo/AppLogo';
 // import axios from 'axios';
 import CountryPhoneInput, { ConfigProvider } from 'antd-country-phone-input';
 import en from 'world_countries_lists/data/countries/en/world.json';
+import pointsImgWhite from '../../assets/images/point_white.png';
+import sittingImgWhite from '../../assets/images/visit_white.png';
 
 // interface UserRegister {
 // 	email: string;
@@ -215,11 +217,9 @@ const RegisterPage: React.FC = () => {
 											currentSetup={1}
 											onClick={(setup: number) => setChooseSetup(setup)}
 											label="Spending"
-										>
-											<div className="setupSelectionAsset">
-												<img src={pointsImg} alt="points" />
-											</div>
-										</SetupSelection>
+											imgSrc={pointsImg}
+											imgSrcHovered={pointsImgWhite}
+										/>
 									</Col>
 									<Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6}>
 										<SetupSelection
@@ -227,11 +227,9 @@ const RegisterPage: React.FC = () => {
 											currentSetup={2}
 											onClick={(setup: number) => setChooseSetup(setup)}
 											label="Visits"
-										>
-											<div className="setupSelectionAsset">
-												<img src={sittingImg} alt="visit" />
-											</div>
-										</SetupSelection>
+											imgSrc={sittingImg}
+											imgSrcHovered={sittingImgWhite}
+										/>
 									</Col>
 								</Row>
 								<div className="chooseSetupCta">
