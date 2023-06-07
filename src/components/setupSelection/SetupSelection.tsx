@@ -1,5 +1,5 @@
 import { Card, Typography } from 'antd';
-import React from 'react';
+import React, { useState } from 'react';
 import './SetupSelection.scss';
 
 interface SetupSelectionProps {
@@ -7,16 +7,22 @@ interface SetupSelectionProps {
 	currentSetup: number;
 	label: string;
 	onClick: (activeSetup: number) => void;
-	children: React.ReactNode;
+	imgSrc: string;
+	imgSrcHovered: string;
 }
 
-const SetupSelection: React.FC<SetupSelectionProps> = ({ activeSetup, currentSetup, label, children, onClick }) => {
+const SetupSelection: React.FC<SetupSelectionProps> = ({ activeSetup, currentSetup, label, imgSrc, imgSrcHovered, onClick }) => {
+	const [hovered, setHovered] = useState<boolean>(false);
 	return (
 		<Card
+			onMouseEnter={() => setHovered(true)}
+			onMouseLeave={() => setHovered(false)}
 			onClick={() => onClick(currentSetup)}
 			className={`setupSelectionCard ${currentSetup === activeSetup ? 'selected' : ''}`}
 		>
-			{children}
+			<div className="setupSelectionAsset">
+				<img src={hovered ? imgSrcHovered : currentSetup === activeSetup && (!hovered || hovered) ? imgSrcHovered : imgSrc} alt="points" />
+			</div>
 			<Typography.Text className="setupSelectionLabel">{label}</Typography.Text>
 		</Card>
 	);
