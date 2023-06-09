@@ -5,7 +5,7 @@ import QRCodeComponent from '../../components/qrCode/QRCode';
 import { Card, Col, Row, Space, Table, Typography } from 'antd';
 import { PhoneOutlined, MessageOutlined, WechatOutlined } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
-import { Line } from 'react-chartjs-2';
+// import { Line } from 'react-chartjs-2';
 import {
 	Chart as ChartJS,
 	CategoryScale,
@@ -128,52 +128,52 @@ const DashboardPage: React.FC = () => {
 		}
 	];
 
-	const chartData = {
-		labels: ['1', '2', '3', '4', '5', '6', '7'],
-		datasets: [
-			{
-				label: 'Dataset 1',
-				data: [0, 20, 18, 40, 36, 60, 52, 30],
-				backgroundColor: '#401AFE',
-				borderColor: '#401AFE',
-				borderWidth: 10,
-				pointRadius: 0,
-				fill: true
-			},
-			{
-				label: 'Dataset 1',
-				data: [2, 22, 18, 44, 37, 22, 32, 0],
-				backgroundColor: '#401AFE',
-				borderColor: '#401AFE',
-				borderWidth: 10,
-				pointRadius: 0,
-				fill: true
-			}
-		]
-	};
+	// const chartData = {
+	// 	labels: ['1', '2', '3', '4', '5', '6', '7'],
+	// 	datasets: [
+	// 		{
+	// 			label: 'Dataset 1',
+	// 			data: [0, 20, 18, 40, 36, 60, 52, 30],
+	// 			backgroundColor: '#401AFE',
+	// 			borderColor: '#401AFE',
+	// 			borderWidth: 10,
+	// 			pointRadius: 0,
+	// 			fill: true
+	// 		},
+	// 		{
+	// 			label: 'Dataset 1',
+	// 			data: [2, 22, 18, 44, 37, 22, 32, 0],
+	// 			backgroundColor: '#401AFE',
+	// 			borderColor: '#401AFE',
+	// 			borderWidth: 10,
+	// 			pointRadius: 0,
+	// 			fill: true
+	// 		}
+	// 	]
+	// };
 
-	const chartOptions = {
-		responsive: true,
-		scales: {
-			y: {
-				display: true,
-				beginAtZero: true
-			},
-			x: {
-				display: true // Hide x-axis labels
-			}
-		},
-		elements: {
-			line: {
-				tension: 0 // Set the line tension to 0 for straight lines
-			}
-		},
-		plugins: {
-			legend: {
-				display: false // Hide the legend if desired
-			}
-		}
-	};
+	// const chartOptions = {
+	// 	responsive: true,
+	// 	scales: {
+	// 		y: {
+	// 			display: true,
+	// 			beginAtZero: true
+	// 		},
+	// 		x: {
+	// 			display: true // Hide x-axis labels
+	// 		}
+	// 	},
+	// 	elements: {
+	// 		line: {
+	// 			tension: 0 // Set the line tension to 0 for straight lines
+	// 		}
+	// 	},
+	// 	plugins: {
+	// 		legend: {
+	// 			display: false // Hide the legend if desired
+	// 		}
+	// 	}
+	// };
 
 	return (
 		<AdminLayout className="dashboardPage">
@@ -195,9 +195,9 @@ const DashboardPage: React.FC = () => {
 							<StatsCard title="Total Visits" count={92} label="This month" newCount={21} positive />
 						</Col>
 					</Row>
-					<Card className="dashboardLineGraphChart">
+					{/* <Card className="dashboardLineGraphChart">
 						<Line data={chartData} options={chartOptions} />
-					</Card>
+					</Card> */}
 					<Card className="customerCardTable">
 						<Typography.Title className="textPrimary tableTitle" level={4}>
 							Last Customers
