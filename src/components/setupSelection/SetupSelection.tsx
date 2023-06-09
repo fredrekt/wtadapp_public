@@ -1,8 +1,6 @@
-import { Card, Typography, Modal } from 'antd';
+import { Card, Typography } from 'antd';
 import React, { useState } from 'react';
 import './SetupSelection.scss';
-
-const { confirm } = Modal;
 
 interface SetupSelectionProps {
 	activeSetup: number;
@@ -23,28 +21,11 @@ const SetupSelection: React.FC<SetupSelectionProps> = ({
 }) => {
 	const [hovered, setHovered] = useState<boolean>(false);
 
-	const showConfirm = () => {
-		confirm({
-			title: 'Continue setup plan',
-			content: currentSetup === 1 ? 'For every riyal spent, they will earn points.' : 'Each time a customer visits, they will receive a stamp.',
-			centered: true,
-			okText: 'Accept',
-			cancelText: 'Cancel',
-			onOk() {
-				console.log('OK');
-				onClick(currentSetup);
-			},
-			onCancel() {
-				console.log('Cancel');
-			}
-		});
-	};
-
 	return (
 		<Card
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
-			onClick={showConfirm}
+			onClick={() => onClick(currentSetup)}
 			className={`setupSelectionCard ${currentSetup === activeSetup ? 'selected' : ''}`}
 		>
 			<div className="setupSelectionAsset">
@@ -60,6 +41,11 @@ const SetupSelection: React.FC<SetupSelectionProps> = ({
 				/>
 			</div>
 			<Typography.Text className="setupSelectionLabel">{label}</Typography.Text>
+			<Typography.Paragraph className='setupSelectionSubLabel'>
+				{currentSetup === 1
+					? 'For every riyal spent, they will earn points.'
+					: 'Each time a customer visits, they will receive a stamp.'}
+			</Typography.Paragraph>
 		</Card>
 	);
 };
