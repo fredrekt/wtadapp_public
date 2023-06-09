@@ -82,52 +82,51 @@ const DashboardPage: React.FC = () => {
 			points: 32
 		},
 		{
-			key: '1',
+			key: '4',
 			name: 'John Brown',
 			points: 32
 		},
 		{
-			key: '2',
+			key: '5',
 			name: 'Jim Green',
 			points: 42
 		},
 		{
-			key: '3',
+			key: '6',
 			name: 'Joe Black',
 			points: 32
 		},
 		{
-			key: '1',
+			key: '7',
 			name: 'John Brown',
 			points: 32
 		},
 		{
-			key: '2',
+			key: '8',
 			name: 'Jim Green',
 			points: 42
 		},
 		{
-			key: '3',
+			key: '9',
 			name: 'Joe Black',
 			points: 32
 		},
 		{
-			key: '1',
+			key: '10',
 			name: 'John Brown',
 			points: 32
 		},
 		{
-			key: '2',
+			key: '11',
 			name: 'Jim Green',
 			points: 42
 		},
 		{
-			key: '3',
+			key: '12',
 			name: 'Joe Black',
 			points: 32
 		}
 	];
-
 	// const chartData = {
 	// 	labels: ['1', '2', '3', '4', '5', '6', '7'],
 	// 	datasets: [
