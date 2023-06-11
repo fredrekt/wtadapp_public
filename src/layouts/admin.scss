@@ -20,7 +20,7 @@
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .adminSideNav {
-        position: absolute!important;
+        position: fixed!important;
         z-index: 4;
         .ant-layout-sider-children {
             position: relative;
@@ -33,7 +33,7 @@
 
 @media all and (min-width: 480px) and (max-width: 768px) {
     .adminSideNav {
-        position: absolute!important;
+        position: fixed!important;
         z-index: 4;
         .ant-layout-sider-children {
             position: relative;
@@ -46,7 +46,7 @@
 
 @media all and (max-width: 480px) {
     .adminSideNav {
-        position: absolute!important;
+        position: fixed!important;
         z-index: 4;
         .ant-layout-sider-children {
             position: relative;

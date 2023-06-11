@@ -37,6 +37,9 @@
 						cursor: pointer;
 					}
 				}
+				.ant-table {
+					overflow: auto;
+				}
 			}
 		}
 		.qrCodeComponent {
@@ -96,7 +99,11 @@
 				width: 100%;
 			}
 			.qrCodeComponent {
+				position: relative;
 				width: 100%;
+				.qrFooter {
+					position: unset;
+				}
 			}
 		}
 	}
