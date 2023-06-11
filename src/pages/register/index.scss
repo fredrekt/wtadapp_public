@@ -1,15 +1,11 @@
 .registerPage {
 	.registerContainer {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 50px;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		gap: 25px;
+		margin-top: 50px;
 		&.flexibleRegistrationContainer {
 			position: unset;
 			overflow: auto;
@@ -177,6 +173,10 @@
 				}
 			}
 		}
+	}
+	.appLogoFooterContainer {
+		margin: unset;
+		margin-top: 50px;
 	}
 }
 

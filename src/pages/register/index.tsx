@@ -12,6 +12,7 @@ import CountryPhoneInput, { ConfigProvider } from 'antd-country-phone-input';
 import en from 'world_countries_lists/data/countries/en/world.json';
 import pointsImgWhite from '../../assets/images/point_white.png';
 import sittingImgWhite from '../../assets/images/visit_white.png';
+import AppLogoFooter from '../../components/appLogo/AppLogoFooter';
 
 // interface UserRegister {
 // 	email: string;
@@ -296,6 +297,7 @@ const RegisterPage: React.FC = () => {
 							</Col>
 						)}
 					</Row>
+					<AppLogoFooter/>
 				</div>
 			</ConfigProvider>
 		</PublicLayout>
