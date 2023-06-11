@@ -42,8 +42,20 @@ const QRCodeComponent: React.FC<QRCodeProps> = () => {
 				</Button>
 			</div>
 			<div className="qrCtaContent">
-				<Button onClick={() => setOpenVisitStamp(true)} shape="round" icon={<UserAddOutlined/>} size="large" type='primary'/>
-				<Button icon={<PlusSquareOutlined />} shape="round" size="large" type="primary" onClick={() => setOpenCreateCustomer(true)}/>
+				<Button
+					onClick={() => setOpenVisitStamp(true)}
+					shape="round"
+					icon={<UserAddOutlined />}
+					size="large"
+					type="primary"
+				/>
+				<Button
+					icon={<PlusSquareOutlined />}
+					shape="round"
+					size="large"
+					type="primary"
+					onClick={() => setOpenCreateCustomer(true)}
+				/>
 			</div>
 			<div className="qrContent">
 				<Typography.Paragraph>

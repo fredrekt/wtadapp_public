@@ -12,12 +12,12 @@ interface PublicLayoutProps {
 const PublicLayout: React.FC<PublicLayoutProps> = ({ children, className, register }) => {
 	return (
 		<Layout className={`wtdLayout ${className}`}>
-			<Content>
-				{children}
-			</Content>
-			{!register && <Footer className='wtdPublicFooter'>
-				<AppLogoFooter/>
-			</Footer>}
+			<Content>{children}</Content>
+			{!register && (
+				<Footer className="wtdPublicFooter">
+					<AppLogoFooter />
+				</Footer>
+			)}
 		</Layout>
 	);
 };

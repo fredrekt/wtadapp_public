@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { ConfigProvider } from 'antd';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ar_EG from 'antd/locale/ar_EG';
-import axios from 'axios'
+import axios from 'axios';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

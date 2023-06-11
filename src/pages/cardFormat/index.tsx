@@ -68,7 +68,7 @@ const CardFormatPage: React.FC = () => {
 									}
 									name="username"
 								>
-									<ColorPicker className='colorPicker' />
+									<ColorPicker className="colorPicker" />
 								</Form.Item>
 
 								<Form.Item

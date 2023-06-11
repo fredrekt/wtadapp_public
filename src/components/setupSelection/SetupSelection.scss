@@ -4,7 +4,7 @@
 	text-align: center;
 	.setupSelectionLabel {
 		font-weight: 700;
-		color: #411BFF;
+		color: #411bff;
 		font-size: 15px;
 		text-align: center;
 		&.header {
@@ -23,7 +23,7 @@
 		box-shadow: unset;
 	}
 	&.selected {
-		background: #411BFF;
+		background: #411bff;
 		.setupSelectionLabel {
 			color: #ffffff;
 		}
@@ -33,7 +33,7 @@
 	}
 	&:hover {
 		color: #ffffff;
-		background: #411BFF;
+		background: #411bff;
 		.setupSelectionLabel {
 			color: #ffffff;
 		}

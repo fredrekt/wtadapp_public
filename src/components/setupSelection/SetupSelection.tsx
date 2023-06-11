@@ -41,7 +41,7 @@ const SetupSelection: React.FC<SetupSelectionProps> = ({
 				/>
 			</div>
 			<Typography.Text className="setupSelectionLabel">{label}</Typography.Text>
-			<Typography.Paragraph className='setupSelectionSubLabel'>
+			<Typography.Paragraph className="setupSelectionSubLabel">
 				{currentSetup === 1
 					? 'For every riyal spent, they will earn points.'
 					: 'Each time a customer visits, they will receive a stamp.'}

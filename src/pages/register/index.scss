@@ -120,7 +120,7 @@
 		.registerChooseSetup {
 			.chooseSetupHeaderTxt {
 				text-align: center;
-				color: #411BFF;
+				color: #411bff;
 				font-weight: 700;
 			}
 			.chooseSetupSubTxt {
@@ -148,7 +148,7 @@
 						li {
 							font-size: 20px;
 							&::marker {
-								color: #411BFF;
+								color: #411bff;
 							}
 						}
 					}
@@ -191,15 +191,12 @@
 * --------------------------------------------
 */
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-	
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-
 }
 
 @media all and (max-width: 480px) {

@@ -1,16 +1,16 @@
 .appLogoFooterContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    .publicFooterCopyrightImg {
-        width: 100px;
-        margin-bottom: 7px;
-    }
-    .publicFooterCopyrightTxt {
-        color: #838383;
-        font-size: small;
-    }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: auto;
+	.publicFooterCopyrightImg {
+		width: 100px;
+		margin-bottom: 7px;
+	}
+	.publicFooterCopyrightTxt {
+		color: #838383;
+		font-size: small;
+	}
 }

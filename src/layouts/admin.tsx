@@ -4,7 +4,7 @@ import { Content } from 'antd/es/layout/layout';
 import React from 'react';
 import SideNav from '../components/sidenav/SideNav';
 import appLogo from '../assets/images/logo_white.png';
-import './admin.scss'
+import './admin.scss';
 
 interface AdminLayoutProps {
 	className: string;
@@ -15,14 +15,14 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children, className }) => {
 	return (
 		<Layout hasSider className={`wtdAdminLayout ${className}`}>
 			<Sider
-				className='adminSideNav'
+				className="adminSideNav"
 				style={{
 					backgroundColor: `#401BFF`,
 					height: '100vh',
 					position: 'fixed',
 					left: 0,
 					top: 0,
-					bottom: 0,
+					bottom: 0
 				}}
 				breakpoint="lg"
 				collapsedWidth="0"
