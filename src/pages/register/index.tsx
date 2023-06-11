@@ -95,7 +95,7 @@ const RegisterPage: React.FC = () => {
 	};
 
 	return (
-		<PublicLayout className="registerPage">
+		<PublicLayout register className="registerPage">
 			<ConfigProvider locale={en}>
 				<div className={`registerContainer${step === 3 ? ' flexibleRegistrationContainer' : ''}`}>
 				<Row className="registerStepsContainer" justify={'center'} align={'middle'}>

@@ -6,17 +6,18 @@ import AppLogoFooter from '../components/appLogo/AppLogoFooter';
 interface PublicLayoutProps {
 	className: string;
 	children: React.ReactNode;
+	register?: boolean;
 }
 
-const PublicLayout: React.FC<PublicLayoutProps> = ({ children, className }) => {
+const PublicLayout: React.FC<PublicLayoutProps> = ({ children, className, register }) => {
 	return (
 		<Layout className={`wtdLayout ${className}`}>
 			<Content>
 				{children}
 			</Content>
-			<Footer className='wtdPublicFooter'>
+			{!register && <Footer className='wtdPublicFooter'>
 				<AppLogoFooter/>
-			</Footer>
+			</Footer>}
 		</Layout>
 	);
 };
