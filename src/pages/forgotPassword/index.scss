@@ -1,0 +1,47 @@
+.forgotPasswordPage {
+    .forgotPasswordContainer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 50px;
+		.forgotPasswordCardContainer {
+			.ant-card-body {
+				padding-top: 150px;
+			}
+			.forgotPasswordEmail {
+				text-align: center;
+				&::placeholder {
+					font-weight: 700;
+				}
+			}
+            .forgotPasswordSubTxt {
+                text-align: center;
+                color: #a39d9d;
+                font-weight: 600;
+            }
+			.forgotPasswordCta {
+				width: 100%;
+				margin-top: 25px;
+				button {
+					width: 100%;
+					margin: auto;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.forgotPassword {
+				gap: 8px;
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				width: 100%;
+				margin: 12px 0px 0;
+				a {
+					color: #a39d9d;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
