@@ -13,6 +13,7 @@ import SettingsPage from './pages/settings';
 import HelpPage from './pages/help';
 import MissingPage from './pages/missing';
 import ForgotPasswordPage from './pages/forgotPassword';
+import ResetPasswordPage from './pages/resetPassword';
 
 const App: React.FC = () => {
 	return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
 				<Route path="/login" index element={<LoginPage />} />
 				<Route path="/register" index element={<RegisterPage />} />
 				<Route path="/forgot-password" index element={<ForgotPasswordPage />} />
+				<Route path="/reset-password/:guid" index element={<ResetPasswordPage />} />
 				<Route
 					path="/"
 					index
