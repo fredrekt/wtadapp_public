@@ -297,7 +297,7 @@ const RegisterPage: React.FC = () => {
 							</Col>
 						)}
 					</Row>
-					<AppLogoFooter/>
+					<AppLogoFooter />
 				</div>
 			</ConfigProvider>
 		</PublicLayout>

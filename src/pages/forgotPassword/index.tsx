@@ -12,7 +12,7 @@ const ForgotPasswordPage: React.FC = () => {
 			message.error('Must provide an email to retrieve account.');
 			return;
 		}
-    message.success(`Reset link has been sent to your email.`)
+		message.success(`Reset link has been sent to your email.`);
 	};
 
 	return (
@@ -21,13 +21,21 @@ const ForgotPasswordPage: React.FC = () => {
 				<Col xs={20} sm={20} md={12} lg={9} xl={7} xxl={5}>
 					<Card className="forgotPasswordCardContainer">
 						<AppLogo />
-            <Typography.Paragraph className='forgotPasswordSubTxt'>
-              Enter your email, and we'll send you a link to reset your password.
-            </Typography.Paragraph>
-            <Input size="large" className='forgotPasswordEmail' value={email} onChange={(e: any) => setEmail(e.target.value)} placeholder='Email Address' />
-            <Row className="forgotPasswordCta" align="middle" justify={'center'}>
+						<Typography.Paragraph className="forgotPasswordSubTxt">
+							Enter your email, and we'll send you a link to reset your password.
+						</Typography.Paragraph>
+						<Input
+							size="large"
+							className="forgotPasswordEmail"
+							value={email}
+							onChange={(e: any) => setEmail(e.target.value)}
+							placeholder="Email Address"
+						/>
+						<Row className="forgotPasswordCta" align="middle" justify={'center'}>
 							<Col xs={15} sm={15} md={12} lg={12} xl={12} xxl={12}>
-									<Button onClick={onForgetPassword} type='primary' size="large">Send Reset Link</Button>
+								<Button onClick={onForgetPassword} type="primary" size="large">
+									Send Reset Link
+								</Button>
 							</Col>
 						</Row>
 					</Card>

@@ -22,7 +22,7 @@ const ResetPasswordPage: React.FC = () => {
 		message.success(`Successfully changed your password.`);
 		setTimeout(() => {
 			navigate('/login');
-		}, 1000)
+		}, 1000);
 	};
 
 	return (
