@@ -12,6 +12,7 @@ import PageFormatPage from './pages/pageFormat';
 import SettingsPage from './pages/settings';
 import HelpPage from './pages/help';
 import MissingPage from './pages/missing';
+import ForgotPasswordPage from './pages/forgotPassword';
 
 const App: React.FC = () => {
 	return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
 			<Routes>
 				<Route path="/login" index element={<LoginPage />} />
 				<Route path="/register" index element={<RegisterPage />} />
+				<Route path="/forgot-password" index element={<ForgotPasswordPage />} />
 				<Route
 					path="/"
 					index
