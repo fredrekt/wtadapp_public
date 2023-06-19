@@ -55,14 +55,38 @@
 
 		@media all and (min-width: 768px) and (max-width: 1024px) {
 			margin-top: 30px;
+			.customFormRowInputContainer {
+				textarea {
+					margin-top: 25px;
+				}
+				.ant-form-item-control {
+					flex: auto;
+				}
+			}
 		}
 
 		@media all and (min-width: 480px) and (max-width: 768px) {
 			margin-top: 30px;
+			.customFormRowInputContainer {
+				textarea {
+					margin-top: 25px;
+				}
+				.ant-form-item-control {
+					flex: auto;
+				}
+			}
 		}
 
 		@media all and (max-width: 480px) {
 			margin-top: 20px;
+			.customFormRowInputContainer {
+				textarea {
+					margin-top: 20px;
+				}
+				.ant-form-item-control {
+					flex: auto;
+				}
+			}
 		}
 	}
 }

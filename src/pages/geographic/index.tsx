@@ -17,10 +17,10 @@ const GeographicPage: React.FC = () => {
 							<Form
 								className="geographicFormContainer"
 								name="basic"
-								labelCol={{ span: 12 }}
+								labelCol={{ xs: 24, sm: 24, md: 24, lg: 12, xl: 12, xxl: 12 }}
 								labelAlign="left"
 								labelWrap
-								wrapperCol={{ span: 12 }}
+								wrapperCol={{ xs: 24, sm: 24, md: 24, lg: 12, xl: 12, xxl: 12 }}
 								initialValues={{ remember: true }}
 								onFinish={onFinish}
 								autoComplete="off"
