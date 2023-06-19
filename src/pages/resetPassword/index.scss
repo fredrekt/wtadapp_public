@@ -1,0 +1,56 @@
+.resetPasswordPage {
+    .resetPasswordContainer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 50px;
+		.resetPasswordCardContainer {
+			.ant-card-body {
+				padding-top: 150px;
+			}
+			.resetPassword {
+				margin: 12px 0;
+				.ant-input {
+					text-align: center;
+					&::placeholder {
+						font-weight: 700;
+					}
+				}
+				.ant-input-suffix {
+					position: absolute;
+					right: 10px;
+					top: 0;
+					bottom: 0;
+				}
+			}
+            .resetPasswordSubTxt {
+                text-align: center;
+                color: #a39d9d;
+                font-weight: 600;
+            }
+			.resetPasswordCta {
+				width: 100%;
+				margin-top: 25px;
+				button {
+					width: 100%;
+					margin: auto;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.resetPassword {
+				gap: 8px;
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				width: 100%;
+				margin: 12px 0px 0;
+				a {
+					color: #a39d9d;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
