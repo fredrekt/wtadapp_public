@@ -9,7 +9,7 @@ const GeographicPage: React.FC = () => {
 		<AdminLayout className="geographicPage">
 			<div className="geographicContent">
 				<Row gutter={[16, 16]}>
-					<Col xs={24} sm={24} md={14} lg={14} xl={14} xxl={14}>
+					<Col xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 14, order: 1 }} lg={{ span: 14, order: 1 }} xl={{ span: 14, order: 1 }} xxl={{ span: 14, order: 1 }}>
 						<Card className="fullHeightCard">
 							<Typography.Title className="formTitle" level={4}>
 								Geographic
@@ -52,7 +52,7 @@ const GeographicPage: React.FC = () => {
 							</Form>
 						</Card>
 					</Col>
-					<Col className="mapContent" xs={24} sm={24} md={10} lg={10} xl={10} xxl={10}>
+					<Col className="mapContent" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={10} lg={10} xl={10} xxl={10}>
 						<Card>
 							<Typography.Title className="mapTitle" level={4}>
 								Map
