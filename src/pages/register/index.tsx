@@ -128,7 +128,7 @@ const RegisterPage: React.FC = () => {
 										value={password}
 										placeholder="Password"
 										minLength={8}
-										status={password.length < 8 ? 'error' : ''}
+										status={password.length < 8 && password.length !== 0 ? 'error' : ''}
 										onChange={onChange}
 									/>
 									<CountryPhoneInput
