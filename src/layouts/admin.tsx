@@ -1,10 +1,11 @@
 import { Layout } from 'antd';
 import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
-import React from 'react';
+import React, { useEffect } from 'react';
 import SideNav from '../components/sidenav/SideNav';
 import appLogo from '../assets/images/logo_white.png';
 import './admin.scss';
+import { useLocation } from 'react-router-dom';
 
 interface AdminLayoutProps {
 	className: string;
@@ -12,6 +13,12 @@ interface AdminLayoutProps {
 }
 
 const AdminLayout: React.FC<AdminLayoutProps> = ({ children, className }) => {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
+
 	return (
 		<Layout hasSider className={`wtdAdminLayout ${className}`}>
 			<Sider
