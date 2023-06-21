@@ -96,10 +96,14 @@
 		.dashboardRow {
 			flex-direction: column-reverse;
 			overflow: auto;
+			height: auto;
+			width: auto;
+			margin-bottom: auto;
 			.dashboardContent {
 				width: 100%;
 			}
 			.qrCodeComponent {
+				margin-bottom: auto;
 				position: relative;
 				width: 100%;
 				top: unset;
