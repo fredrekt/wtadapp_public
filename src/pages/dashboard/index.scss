@@ -94,6 +94,7 @@
 
 	@media all and (max-width: 480px) {
 		.dashboardRow {
+			position: relative;
 			flex-direction: column-reverse;
 			overflow: auto;
 			height: auto;
@@ -101,17 +102,19 @@
 			margin-bottom: auto;
 			.dashboardContent {
 				width: 100%;
+				margin-bottom: 50px;
 			}
 			.qrCodeComponent {
 				margin-bottom: auto;
-				position: relative;
+				position: unset;
 				width: 100%;
 				top: unset;
 				bottom: unset;
 				height: auto;
 				right: unset;
 				.qrFooter {
-					position: unset;
+					position: absolute;
+					bottom: 0;
 				}
 			}
 		}
